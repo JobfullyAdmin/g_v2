@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Geekology - Technical Recruiting Training</title>
+  <%= stylesheet_link_tag    "application" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <%= render 'layouts/header' %>
+
+  <div id="landing_page_body">
+
+    <!--
+    <header id="main_top_header">
+      <h1>Geekology Logo</h1>
+      </header>
+
+    <nav id="main_top_menu">
+      <ul>
+	<li>Why Geekology?</li>
+	<li>Classes</li>
+	<li>Blog</li>
+	<li>Contact Us</li>
+      </ul>
+    </nav>
+    -->
+
+    <div id="landing_page_above_fold">
+      <header>
+	<hgroup>
+	  <h1>Geekology</h1>
+	  <h2>geek /gēk/ - A person wiht an eccentric devotion to scientific or technical pursuits</h2>
+	  <h2>geekology /gēkˈäləjē/ - The study of the language, psychology, and functioning of geeks</h2>
+	  </hgroup>
+	</header>
+      
+      <section id="landing_page_above_fold_body">
+	<header>
+	  <hgroup>
+	    <h1>Understanding Geeks Made Simple.</h1>
+	    <h2>You don&rsquo;t need to be a geek to master technical recruiting.</h2>
+	    </hgroup>
+	  </header>
+	<div id="above_fold_container">
+	  <article id="what_is_geekology">
+	    <h1>Introducing - Geekology</h1>
+	    <p>
+	      New <strong> technical recruiting training </strong> programs that give you
+	      everything you need to know about <strong>technology</strong>, <strong>engineering teams</strong>,
+	      and <strong>technical talent</strong> in <strong>plain English</strong>.
+	      </p>
+	      <p>
+	      <%= link_to "Learn more >", url_for(:controller => :pages, :action => :program) %>
+	      </p>
+	    </article>
+	  <article id="social_proof">
+	    <h1>
+	      What people are saying -
+	      </h1>
+	    <ul id="testimonial">
+	      <li>
+		&ldquo;I liked how you simplified everything and helped us &lsquo;connect the dots.&rsquo;
+		[This class was] So helpful!  I feel much more knowledgeable.&rdquo; - R.C.
+		</li>
+	      <li>
+		&ldquo;I was surprised how much better I understand technology [after this class].&rdquo;
+		- Melissa Dela Cruz, DoubleDown Interactive
+		</li>
+	      <li>
+		&ldquo;10 out of 10. [This class] made me feel more confident about recruiting
+		and talking to my engineering team.&rdquo; - Laura Bott, NetMotion Wireless
+		</li>
+	      </ul>
+	    </article>
+	  </div>
+	</section>
+      </div>
+
+    <div id="landing_page_below_fold">
+      <header>
+	<hgroup>
+	  <h1>Technical Knowledge - a core skill for technical recruiting</h1>
+	  <h2>But, you don&rsquo;t need to be hands-on technical to be great at technical recruiting.</h2>
+	  </hgroup>
+	</header>
+      
+      <section id="landing_page_below_fold_body">
+	<div id="below_fold_container">
+	  <article id="after_conditions">
+	    <h1>
+	      What is it like being a technically knowledgeable recruiter?
+	      </h1>
+	    <p>
+	      <ul id="after_condition_items">
+		<li>
+		  Have Intelligent conversations with technical people
+		  </li>
+		<li>
+		  Make smart candiate selections and confident decisions
+		  </li>
+		<li>
+		  Identify high potential candidates that might have been missed
+		  </li>
+		<li>
+		  Gain recognition for your talent acquisition contribution
+		  </li>
+		</ul>
+	      </p>
+	    </article>
+	  <article id="why_pain_point_exists">
+	    <p>
+	      So, why don&rsquo;t most recruiters have enough technical knowledge?
+	      </p>
+	    <p>
+	      Knowing what technical knowledge is <strong>needed</strong> 
+	      and <strong>not needed</strong> for
+	      technical recruiting requires insights and experience from
+	      someone who is <strong>technical</strong> and <strong>understands recruiting</strong>
+	      </p>
+	    </article>
+	  </div>
+	</section>
+      </div>
+    
+    <div id="landing_page_call_to_action">
+      <p>
+	<%= link_to "Find out how you can learn the geek language in an easy-to-understand manner", url_for(:controller => :pages, :action => :program) %>
+      </p>
+    </div>
+
+    <footer id="main_footer">
+      &copy; Copyright Jobfully 2013
+      Geekology is a Jobfully company
+    </footer>
+
+  </div>
+</body>
+</html>

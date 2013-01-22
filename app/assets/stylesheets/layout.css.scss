@@ -1,0 +1,52 @@
+header#page_header{
+  background: #bc471d url('main_above_fold.jpg') center center no-repeat;
+  color: #fff;
+  height: 68px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  padding: 10px 20px;
+
+  a,
+  a:link,
+  a:hover,
+  a:active,
+  a:visited {
+    color: 3fef8e7;
+    text-decoration: none;
+  }
+
+  nav#main_top_menu {
+    float: right;
+    font-size: 0.8em;
+  }
+
+  #geekology_logo {
+    position: absolute;
+    top: 15px;
+  }
+}
+
+footer#page_footer {
+  background-color: #807c77;
+  border-bottom: 10px solid #4c2719;
+  color: #fff;
+  font0size: 0.7em;
+  height: 100px;
+  padding: 10px 20px;
+  /* float: right; */
+
+  ul {
+    margin-left: -10px;
+    padding: 0;
+
+    li {
+      border-right: 1px solid #fef8e7;
+      display: inline;
+      margin: 0;
+      &:last-child {
+        border-right: none;
+      }
+    }
+
+  }
+}

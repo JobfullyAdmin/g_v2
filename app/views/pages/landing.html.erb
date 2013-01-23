@@ -1,6 +1,9 @@
 <!doctype html>
 <html lang="en">
 <head>
+  <!--
+  <link href='http://fonts.googleapis.com/css?family=Lusitana:400,700' rel='stylesheet' type='text/css'>
+  -->
   <meta charset="utf-8" />
   <title>Geekology - Technical Recruiting Training</title>
   <%= stylesheet_link_tag    "application" %>
@@ -12,77 +15,59 @@
 
   <div id="landing_page_body">
 
-    <!--
-    <header id="main_top_header">
-      <h1>Geekology Logo</h1>
-      </header>
-
-    <nav id="main_top_menu">
-      <ul>
-	<li>Why Geekology?</li>
-	<li>Classes</li>
-	<li>Blog</li>
-	<li>Contact Us</li>
-      </ul>
-    </nav>
-    -->
-
     <div id="landing_page_above_fold">
-      <header>
-	<hgroup>
-	  <h1>Geekology</h1>
-	  <h2>geek /gēk/ - A person wiht an eccentric devotion to scientific or technical pursuits</h2>
-	  <h2>geekology /gēkˈäləjē/ - The study of the language, psychology, and functioning of geeks</h2>
-	  </hgroup>
-	</header>
+      <header id="definition">
+	<h1><strong>geek</strong> /gēk/ - A person wiht an eccentric devotion to scientific or technical pursuits</h2>
+	<h1><strong>geekology</strong> /gēkˈäləjē/ - The study of the language, psychology, and functioning of geeks</h2>
+      </header>
       
-      <section id="landing_page_above_fold_body">
+      <section id="landing_page_above_fold_heading">
 	<header>
 	  <hgroup>
 	    <h1>Understanding Geeks Made Simple.</h1>
 	    <h2>You don&rsquo;t need to be a geek to master technical recruiting.</h2>
-	    </hgroup>
-	  </header>
+	  </hgroup>
+	</header>
 	<div id="above_fold_container">
-	  <article id="what_is_geekology">
+	  <div id="what_is_geekology">
 	    <h1>Introducing - Geekology</h1>
 	    <p>
 	      New <strong> technical recruiting training </strong> programs that give you
 	      everything you need to know about <strong>technology</strong>, <strong>engineering teams</strong>,
 	      and <strong>technical talent</strong> in <strong>plain English</strong>.
-	      </p>
-	      <p>
+	    </p>
+	    <p>
 	      <%= link_to "Learn more >", url_for(:controller => :pages, :action => :program) %>
-	      </p>
-	    </article>
-	  <article id="social_proof">
+	    </p>
+	  </div>
+	  <div id="social_proof">
 	    <h1>
 	      What people are saying -
-	      </h1>
+	    </h1>
 	    <ul id="testimonial">
 	      <li>
 		&ldquo;I liked how you simplified everything and helped us &lsquo;connect the dots.&rsquo;
 		[This class was] So helpful!  I feel much more knowledgeable.&rdquo; - R.C.
-		</li>
+	      </li>
 	      <li>
 		&ldquo;I was surprised how much better I understand technology [after this class].&rdquo;
 		- Melissa Dela Cruz, DoubleDown Interactive
-		</li>
+	      </li>
 	      <li>
 		&ldquo;10 out of 10. [This class] made me feel more confident about recruiting
 		and talking to my engineering team.&rdquo; - Laura Bott, NetMotion Wireless
-		</li>
+	      </li>
 	      </ul>
-	    </article>
 	  </div>
-	</section>
-      </div>
+	</div>
+      </section>
+    </div>
 
     <div id="landing_page_below_fold">
       <header>
 	<hgroup>
 	  <h1>Technical Knowledge - a core skill for technical recruiting</h1>
-	  <h2>But, you don&rsquo;t need to be hands-on technical to be great at technical recruiting.</h2>
+	  <h2>But, you don&rsquo;t need to be a programmer to be great at technical recruiting.</h2>
 	  </hgroup>
 	</header>
       
@@ -91,38 +76,38 @@
 	  <article id="after_conditions">
 	    <h1>
 	      What is it like being a technically knowledgeable recruiter?
-	      </h1>
+	    </h1>
 	    <p>
 	      <ul id="after_condition_items">
 		<li>
 		  Have Intelligent conversations with technical people
-		  </li>
+		</li>
 		<li>
 		  Make smart candiate selections and confident decisions
-		  </li>
+		</li>
 		<li>
 		  Identify high potential candidates that might have been missed
-		  </li>
+		</li>
 		<li>
 		  Gain recognition for your talent acquisition contribution
-		  </li>
-		</ul>
-	      </p>
-	    </article>
+		</li>
+	      </ul>
+	    </p>
+	  </article>
 	  <article id="why_pain_point_exists">
 	    <p>
 	      So, why don&rsquo;t most recruiters have enough technical knowledge?
-	      </p>
+	    </p>
 	    <p>
 	      Knowing what technical knowledge is <strong>needed</strong> 
 	      and <strong>not needed</strong> for
 	      technical recruiting requires insights and experience from
 	      someone who is <strong>technical</strong> and <strong>understands recruiting</strong>
-	      </p>
-	    </article>
-	  </div>
-	</section>
-      </div>
+	    </p>
+	  </article>
+	</div>
+      </section>
+    </div>
     
     <div id="landing_page_call_to_action">
       <p>

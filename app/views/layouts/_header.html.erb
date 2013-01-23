@@ -1,5 +1,13 @@
 <header id="page_header" role="banner">
 
+  <%= link_to(
+        image_tag("geekology_logo.png",
+                  size: "250x66",
+                  alt: "Geekology - Technical Recruiting Training",
+                  id: "geekology_logo"),
+        root_url,
+        title: "Geekology home") %>
+
   <nav id="main_top_menu">
     <ul>
       <li><%= link_to "Why Geekology?", root_url %></li>
@@ -8,12 +16,5 @@
       <li><%= link_to "Contact Us", "http://www.jobfully.com/contact_us" %></li>
     </ul>
   </nav>
-
-  <%= link_to(
-        image_tag("logo.jpg",
-                  alt: "Geekology - Technical Recruiting Training",
-                  id: "geekology_logo"),
-        root_url,
-        title: "Geekology home") %>
 
 </header>

@@ -1,9 +1,26 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+header, section, footer, aside, nav, article, hgroup {
+  display: block;
+}
+
+body{
+  /* font-family: times, lasitana, Serif; */
+  font-family: georgia, papyrus, Serif;
+  text-align: center;
+
+  width: 100%;
+}
+
+
 header#page_header{
-  background: #bc471d url('main_above_fold.jpg') center center no-repeat;
+  background-color: #f1ddd2;
   color: #fff;
-  height: 68px;
-  margin-bottom: 10px;
-  overflow: hidden;
+  height: 30px;
+  /* overflow: hidden; */
   padding: 10px 20px;
 
   a,
@@ -15,14 +32,24 @@ header#page_header{
     text-decoration: none;
   }
 
-  nav#main_top_menu {
+  nav#main_top_menu{
     float: right;
-    font-size: 0.8em;
+  }
+
+  nav#main_top_menu ul{
+    margin: 0;
+  }
+
+  nav#main_top_menu li{
+    display: inline-block;
+    list-style: none;
+    padding: 5px;
+    font-size: 21px;
   }
 
   #geekology_logo {
-    position: absolute;
     top: 15px;
+    float: left;
   }
 }
 
@@ -49,4 +76,71 @@ footer#page_footer {
     }
 
   }
+}
+
+body#landing_page_body{
+  max-width: 960px;
+  margin: 20px 0px;
+
+  display: -webkit-box;
+  -webkit-box-pack: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-flex: 1;
+}
+
+div#landing_page_above_fold{
+  height: auto;
+  background: url('landing_above_fold.png') no-repeat;
+}
+
+#definition{
+  padding: 5px 0 10px 0;
+}
+
+#definition h1 {
+  font-size: 18px;
+  font-weight: normal;
+  text-align: right;
+  padding-right: 5%;
+  padding-top: 5px;
+}
+
+section#landing_page_above_fold_heading{
+  header h1{
+    font-size: 45px;
+  }
+  header h2{
+    font-size: 24px;
+    font-weight: normal;
+  }
+}
+
+div#above_fold_container{
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  border-top: 1px solid black;
+  -webkit-box-align: stretch;
+}
+
+div#what_is_geekology{
+  padding: 5px 20px 10px 30px;
+  -webkit-box-flex: 1;
+  width: 50%;
+
+  font-size: 24px;
+  text-align: right;
+
+  h1 {
+    font-size: 36px;
+  }
+
+  p {
+    margin: 10px 0;
+  }
+}
+
+div#social_proof{
+  border: 1px solid red;
+  -webkit-box-flex: 1;
+  width: 300px;
 }

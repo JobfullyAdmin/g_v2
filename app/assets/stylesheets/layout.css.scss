@@ -62,10 +62,10 @@ footer#page_footer {
   padding: 10px 20px;
 }
 
+body#program_page_body,
 body#landing_page_body{
   max-width: 960px;
   margin: 20px 0px;
-  height: 480px;
 
   /*
   display: -webkit-box;
@@ -99,15 +99,6 @@ section#landing_page_above_fold_heading{
     font-size: 24px;
     font-weight: normal;
   }
-}
-
-div#above_fold_container{
-  /*
-  display: -webkit-box;
-  -webkit-box-orient: horizontal;
-  border-top: 1px solid black;
-  -webkit-box-align: stretch;
-  */
 }
 
 div#what_is_geekology{
@@ -219,4 +210,155 @@ div#landing_page_call_to_action {
     padding: 10px 30px;
     background-color: rgba(240,240,240, .5);
   }
+}
+
+div#program_page_above_fold{
+  background: url('program_above_fold.png') repeat;
+  header {
+    text-align: right;
+    padding-right: 5%;
+    padding-top: 5px;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 21px;
+    font-weight: normal;
+  }
+
+  padding-bottom: 30px;
+}
+
+div#differentiators {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  padding: 10px 30px;
+  background-color: rgba(240,240,240, .5);
+
+  h1 {
+    font-size: 30px;
+    padding-bottom: 10px;
+  }
+
+  ur {
+    list-style-position: inside;
+    padding-bottom: 5px;
+  }
+
+  li {
+    font-size: 21px;
+    padding: 3px;
+  }
+}
+
+div#program_page_below_fold {
+  background: url('landing_below_fold_1.png') repeat;
+  height: auto;
+
+  header h1 {
+    font-size: 27px;
+    padding-top: 15px;
+    font-style: italic;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}
+
+
+.program_container {
+}
+
+div.program_title {
+  display: inline-block;
+  width: 360px;
+  height: 290px;
+
+  h1 {
+    margin-top: 20%;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+}
+
+#hr_program_title {
+  background: 
+    url('program_title_1.png') no-repeat center center,
+    url('landing_below_fold_1.png');
+}
+
+#agency_program_title {
+  background: 
+    url('program_title_2.png') no-repeat center center,
+    url('landing_below_fold_1.png');
+}
+
+#bigco_program_title {
+  background: 
+    url('program_title_3.png') no-repeat center center,
+    url('landing_below_fold_1.png');
+}
+
+.program_description{
+  display: inline-block;
+  background-color: rgba(240,240,240, .5);
+  padding: 20px;
+  margin-left: 20px;
+  height: 100%;
+}
+
+.program_table {
+  padding: 10px;
+  margin: 15px 10% 15px 10%;
+  border-spacing: 5px;
+
+  li {
+    list-style: none;
+  }
+}
+
+div#below_fold_container {
+  padding-bottom: 20px;
+}
+
+.description_table {
+  text-align: left;
+  td {
+    vertical-align: top;
+    padding: 3px;
+  }
+}
+
+div#program_page_bio {
+  background: url('program_page_bio.png') repeat;
+  padding: 15px 0;
+
+  h1 {
+    padding: 10px 0 5px 0;
+    font-size: 21px;
+  }
+
+  p {
+    padding: 4px 0;
+    font-size: 15px;
+  }
+}
+
+div#bio_container {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 15px;
+  background-color: rgba(240,240,240, .5);
 }

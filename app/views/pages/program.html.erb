@@ -21,26 +21,25 @@
       </header>
       
       <section id="program_page_above_fold_body">
-	<div id="above_fold_container">
-	  <article id="differentiators">
-	    <h1>
-	      What makes our programs different?
-	      </h1>
-	    <ul id="testimonial">
-	      <li>
-		Specifically designed for <strong>recruiting technical talent</strong>
-	      </li>
-	      <li>
-		Everything is <strong>easy-to-understand</strong>
-	      </li>
-	      <li>
-		Learn <strong>only</strong> what&rsquo;s necessary
-	      </li>
-	      <li>
-		Unique insights from combining <strong>software knowledge</strong> and
-		<strong>recruiting expertise</strong>
-	      </li>
-	    </ul>
+	<div id="differentiators">
+	  <h1>
+	    What makes our programs different?
+	  </h1>
+	  <ul>
+	    <li>
+	      Specifically designed for <strong>recruiting technical talent</strong>
+	    </li>
+	    <li>
+	      Everything is <strong>easy-to-understand</strong>
+	    </li>
+	    <li>
+	      Learn <strong>only</strong> what&rsquo;s necessary
+	    </li>
+	    <li>
+	      Combining <strong>software knowledge</strong> and
+	      <strong>recruiting expertise</strong>
+	    </li>
+	  </ul>
 	</div>
       </section>
     </div>
@@ -54,142 +53,231 @@
       
       <section id="program_page_below_fold_body">
 	<div id="below_fold_container">
-	  <article id="agency_program">
-	    <div id="program_title">
-	      <h1>Technical Training Intensive</h1>
-	      <h2>A 3-hour workshop</h2>
-	      <%= link_to "Class Detail & Sign up", 
-		          url_for(:controller => :pages,
-	                          :action => :agency) %>
-	    </div>
-	    <div id="program_description">
-	      <table>
-		<tr>
-		  <td>
-		    Who -
-		    </td>
-		  <td>
-		    <strong>Agency recruiters</strong> who want to differentiate themselves
-		    and stay ahead of the crowd
-		    </td>
-		  </tr>
-		<tr>
-		  <td>
-		    Why -
-		    </td>
-		  <td>
-		    Identify hidden gems and build better relationships with technical people
-		    </td>
-		  </tr>
-		<tr>
-		  <td>
-		    How -
-		    </td>
-		  <td>
-		    <ul>
-		      <li>
-			<strong>Better client communication</strong> because you &rdquo;get it&ldquo;
-			when you have an overall understanding of how software is made
-			</li>
-		      <li>
-			<strong>Confident candidate selection</strong> because you develop insights
-			when you know how different roles function and interact
-			</li>
-		      <li>
-			<strong>Stronger relationships</strong> with tech community because you speak intelligently
-			when you understand tools of their trade
-			</li>
-		      </ul>
-		    </td>
-		  </tr>
-		<tr>
-		  <td>
-		    Cost -
-		  </td>
-		  <td>
-		    $299/person or $249/person (group of 3+)
-		  </td>
-		</tr>
-	      </table>
-	    </div>
-	  </article>
-	  <article id="hr_program">
-	    <div id="program_title">
-	      <h1>Technical Recruiting 101</h1>
-	      <h2>3 half-day classes</h2>
-	      <%= link_to "Class Detail & Sign up", 
-		          url_for(:controller => :pages,
-	                          :action => :companyhr) %>
-	    </div>
-	    <div id="program_description">
-	      <table>
-		<tr>
-		  <td>
-		    Who -
-		  </td>
-		  <td>
-		    <strong>Company HR/recruiting professionals</strong> who need
-		    to fill technical positions
-		  </td>
-		</tr>
-		<tr>
-		  <td>
-		    Why -
-		    </td>
-		  <td>
-		    Contribute to meeting company's critical needs for technical talent acquisition
-		  </td>
-		</tr>
-		<tr>
-		  <td>
-		    How -
-		  </td>
-		  <td>
-		    <ul>
-		      <li>
-			<strong>Become a partner of engineering</strong> because you play key role in
-			talent strategy when you understand how your engineering team works and its talent needs
-		      </li>
-		      <li>
-			<strong>Help hiring managers</strong> because you reduce their recruiting work load
-			when you learn their candidate selection principles
-		      </li>
-		      <li>
-			<strong>Create business impact</strong> because you scout the right candidates to drive company growth
-			when you know what to look for and find top technical talent
-		      </li>
-		    </ul>
-		  </td>
-		</tr>
-		<tr>
-		  <td>
-		    Cost -
-		  </td>
-		  <td>
-		    $799/person or $749/person (group of 3+)
-		  </td>
-		  </tr>
-	      </table>
-	    </div>
-	  </article>
+
+          <div id="hr_program" class="program_container">
+	    <table id="hr_table" class="program_table">
+	      <tr id="hr_row" class="table_row">
+		<td class="title_cell">
+		  <div id="hr_program_title" class="program_title">
+		    <h1>Technical Recruiting 101</h1>
+		    <br/>
+		    <h2>3 half-day classes</h2>
+		    <br/>
+		    <%= link_to "Class Detail & Sign up",
+			"http://www.eventbrite.com/event/4859943221" %>
+		  </div>
+		</td>
+		<td class="description_cell">
+		  <div class="program_description">
+		    <table class="description_table">
+		      <tr>
+			<td>
+			  Who
+			</td>
+			<td>
+			  <strong>Company HR/recruiting professionals</strong>
+			  who need to fill technical positions
+			</td>
+		      </tr>
+		      <tr>
+			<td>
+			  Why
+			</td>
+			<td>
+			  Contribute to meeting company's critical needs
+			  for technical talent acquisition
+			</td>
+		      </tr>
+		      <tr>
+			<td>
+			  How
+			</td>
+			<td>
+			  <ul>
+			    <li>
+			      <strong>Become a partner of engineering</strong>
+			      because you play a key role in
+			      talent strategy when you understand how your
+			      engineering team works and its talent needs
+			    </li>
+			    <li>
+			      <strong>Help hiring managers</strong> because
+			      you reduce their recruiting work load
+			      when you learn their candidate selection
+			      principles
+			    </li>
+			    <li>
+			      <strong>Create business impact</strong> because
+			      you scout the right candidates to drive company
+			      growth when you know what to look for to
+			      find top technical talent
+			    </li>
+			  </ul>
+			</td>
+		      </tr>
+		    </table>
+		  </div>
+		</td>
+	      </tr>
+	    </table>
+	  </div>
+
+	  <div id="agency_program" class="program_container">
+	    <table id="agency_table" class="program_table">
+	      <tr id="agency_row" class="table_row">
+		<td class="title_cell">
+		  <div id="agency_program_title" class="program_title">
+		    <h1>Technical Training Intensive</h1>
+		    <br/>
+		    <h2>A 3-hour workshop</h2>
+		    <br/>
+		    <%= link_to "Class Detail & Sign up", 
+			"http://www.eventbrite.com/event/4958578241" %>
+		  </div>
+		</td>
+		<td class="description_cell">
+		  <div class="program_description">
+		    <table class="description_table">
+		      <tr>
+			<td>
+			  Who
+			</td>
+			<td>
+			  <strong>Agency recruiters</strong> who want to
+			  differentiate themselves
+			  and stay ahead of the crowd
+			</td>
+		      </tr>
+		      <tr>
+			<td>
+			  Why
+			</td>
+			<td>
+			  Identify hidden gems and build better relationships
+			  with technical talent
+			</td>
+		      </tr>
+		      <tr>
+			<td>
+			  How
+			</td>
+			<td>
+			  <ul>
+			    <li>
+			      <strong>Better client communication</strong>
+			      because you &rdquo;get it&ldquo;
+			      when you have an overall understanding of 
+			      how software is made
+			    </li>
+			    <li>
+			      <strong>Confident candidate selection</strong> 
+			      because you develop insights
+			      when you know how different roles function
+			      and interact
+			    </li>
+			    <li>
+			      <strong>Stronger relationships</strong> with
+			      tech community because you speak intelligently
+			      when you understand tools of their trade
+			    </li>
+			  </ul>
+			</td>
+		      </tr>
+		    </table>
+		  </div>
+		</td>
+	      </tr>
+	    </table>
+	  </div>
+
+	  <div id="bigco_program" class="program_container">
+	    <table id="bigco_table" class="program_table">
+	      <tr id="bigco_row" class="table_row">
+		<td class="title_cell">
+		  <div id="bigco_program_title" class="program_title">
+		    <h1>Technical Recruiting Premium</h1>
+		    <br/>
+		    <h2>Custom designed programs</h2>
+		    <br/>
+		    <h3>Call us at 425-247-0999</h3>
+		  </div>
+		</td>
+		<td class="description_cell">
+		  <div class="program_description">
+		    <table class="description_table">
+		      <tr>
+			<td>
+			  Who
+			</td>
+			<td>
+			  <strong>Corporate recruiting teams</strong> that
+			  need customized training solutions
+			</td>
+		      </tr>
+		      <tr>
+			<td>
+			  Why
+			</td>
+			<td>
+			  Boost results of talent acquisition metrics
+			</td>
+		      </tr>
+		      <tr>
+			<td>
+			  How
+			</td>
+			<td>
+			  <ul>
+			    <li>
+			      <strong>Customized solutions</strong> to boost
+			      technical recruiting competency level
+			      based on your team’s unique needs and
+			      job market situation
+			    </li>
+			    <li>
+			      <strong>Empower your recruiting team</strong>
+			      to drive critical
+			      business results by meeting talent growth targets
+			    </li>
+			    <li>
+			      <strong>Hard skill development for recruiting
+			      staff</strong> pays off in the form of better
+			      talent acquisition results, recruiter
+			      performance and retention
+			    </li>
+			  </ul>
+			</td>
+		      </tr>
+		    </table>
+		  </div>
+		</td>
+	      </tr>
+	    </table>
+	  </div>
+
 	</div>
       </section>
     </div>
     
     <div id="program_page_bio">
-      <h1>
-	Instructor: Mei Lu
-      </h1>
-      <p>
-	Mei Lu is the Founder and CEO of Jobfully.com, an online software start-up focusing
-	on technology job market. Before starting Jobfully, Mei recruited top talent for 
-	Silicon Valley technology companies, including OpenTable, OutSpark, RockYou and TubeMogul.
-	Mei started her career as a software engineer, building software at Qpass, M.I.T, and MicroStrategy.
-      </p>
-      <p>
-	She received her Master’s Degree in Computer Science from University of Pennsylvania and 
-	her Master’s Degree in Engineering from Carnegie Mellon University. 
-      </p>
+      <div id="bio_container">
+	<h1>
+	  Instructor: Mei Lu
+	</h1>
+	<p>
+	  Mei Lu is the Founder and CEO of Jobfully.com, an online software
+	  start-up focusing on technology job market. Before starting 
+	  Jobfully, Mei recruited top talent for Silicon Valley technology
+	  companies, including OpenTable, OutSpark, RockYou and TubeMogul.
+	  Mei started her career as a software engineer, building software
+	  at Qpass, M.I.T, and MicroStrategy.
+	</p>
+	<p>
+	  She received her Master’s Degree in Computer Science from 
+	  University of Pennsylvania and her Master’s Degree in Engineering
+	  from Carnegie Mellon University. 
+	</p>
+      </div>
     </div>
     
     <%= render 'layouts/footer' %>

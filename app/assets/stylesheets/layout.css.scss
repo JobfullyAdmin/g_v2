@@ -114,7 +114,7 @@ div#what_is_geekology{
   }
 
   p {
-    margin: 10px 0;
+    margin: 10px 0 15px 0;
   }
 }
 
@@ -362,4 +362,27 @@ div#bio_container {
   margin-right: auto;
   padding: 10px 15px;
   background-color: rgba(240,240,240, .5);
+}
+
+.text_button {
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#learn_more {
+  background: url('dark_coffee_background.png') repeat;
+  color: white;
+}
+
+#learn_more:hover {
+  background: url('darker_coffee_background.png') repeat;
+}
+
+#landing_page_cta {
+  color: black;
+}
+
+#landing_page_cta:hover {
+  color: #333;
 }

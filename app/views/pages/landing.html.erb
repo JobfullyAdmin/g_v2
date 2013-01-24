@@ -37,7 +37,7 @@
 	      and <strong>technical talent</strong> in <strong>plain English</strong>.
 	    </p>
 	    <p>
-	      <%= link_to "Learn more >>", url_for(:controller => :pages, :action => :program) %>
+	      <%= link_to "Learn more >>", url_for(:controller => :pages, :action => :program), :class => 'text_button', :id => 'learn_more' %>
 	    </p>
 	  </div>
 	  <div id="social_proof">
@@ -114,7 +114,10 @@
     
     <div id="landing_page_call_to_action">
       <p>
-	<%= link_to "Find out how you can learn the geek language in an easy-to-understand manner", url_for(:controller => :pages, :action => :program) %>
+	<%= link_to "Find out how you can learn the geek language in an easy-to-understand manner", 
+	    url_for(:controller => :pages, :action => :program),
+	    :id => 'landing_page_cta'
+	%>
       </p>
     </div>
 

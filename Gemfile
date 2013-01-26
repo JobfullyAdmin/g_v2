@@ -25,6 +25,10 @@ gem 'haml-rails' # Optional - to generate haml
 gem 'jquery-rails'
 gem 'html5-rails'
 
+group :production do
+  gem 'rack-google_analytics', :require => "rack/google_analytics"
+end
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 

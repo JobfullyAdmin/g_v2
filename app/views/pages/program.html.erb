@@ -54,7 +54,8 @@
 		  <h2>3 half-day classes</h2>
 		  <br/>
 		  <%= link_to "Class Detail & Sign up",
-		      "http://www.eventbrite.com/event/4859943221" %>
+		      "http://www.eventbrite.com/event/4859943221",
+		      :class => 'text_button', :id => 'class_detail' %>
 		</div>
 	      </td>
 	      <td class="description_cell">
@@ -122,7 +123,8 @@
 		  <h2>A 3-hour workshop</h2>
 		  <br/>
 		  <%= link_to "Class Detail & Sign up", 
-		      "http://www.eventbrite.com/event/4958578241" %>
+		      "http://www.eventbrite.com/event/4958578241",
+		      :class => 'text_button', :id => 'class_detail' %>
 		</div>
 	      </td>
 	      <td class="description_cell">
@@ -254,6 +256,8 @@
       <h1>
 	Instructor: Mei Lu
       </h1>
+      <%= link_to image_tag('linkedin_logo.png'),
+	  "http://www.linkedin.com/in/meiiam/" %>
       <p>
 	Mei Lu is the Founder and CEO of Jobfully.com, an online software
 	start-up focusing on technology job market. Before starting 

@@ -370,12 +370,14 @@ div#bio_container {
   border-radius: 10px;
 }
 
-#learn_more {
+#learn_more,
+#class_detail {
   background: url('dark_coffee_background.png') repeat;
   color: white;
 }
 
-#learn_more:hover {
+#learn_more:hover,
+#class_detail {
   background: url('darker_coffee_background.png') repeat;
 }
 
@@ -385,4 +387,8 @@ div#bio_container {
 
 #landing_page_cta:hover {
   color: #333;
+}
+
+#linkedin {
+  background: url('linkedin_logo.png');
 }

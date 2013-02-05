@@ -1,2 +1,149 @@
-<h1>Pages#companyhr</h1>
-<p>Find me in app/views/pages/companyhr.html.erb</p>
+<%= render 'layouts/header' %>
+
+<div id="companyhr_signup_page_body" class="signup_page_body">
+
+  <header class="signup_top_header">
+    <h1>Technical Recruiting 101</h1>
+  </header>
+
+  <div class="signup_page_body_container">
+    <div class="text_drawing_container">
+      <section id="companyhr_self_identifier" class="customer_self_identifier">
+	<%= image_tag('company_signup_drawing_1.png',
+                      :alt => "Da Vinci 1",
+                      :id => 'drawing_1') %>
+
+	<p>
+	  Technical Training 101 is designed for
+	  <strong>in-house HR/recruiting professionals</strong>
+	  who want to make an impact on the company's business by
+	  meeting its critical <strong>technical talent
+	    acquisition</strong> needs, yet feeling bogged down by the jargons
+	  and cryptic language in job descriptions and
+	  resumes, commonly used by technical people.
+	</p>
+      </section>
+
+      <section id="program_description">
+	<p>
+	  This course will lay a solid foundation for understanding
+	  the inner working of 
+	  typical <strong>software engineering teams</strong>,
+	  tools of their trade,
+	  how they work individually
+	  and as a group.  You&rsquo;ll learn how to
+	  <strong>decode technical terms</strong>,
+	  <strong>ask revealing questions</strong> to
+	  hiring managers and candidates, find
+	  <strong>resources and best practices</strong>
+	  for technical recruiting. You can apply to this
+	  knowledge immediately and
+	  make your recruiting easier and more productive.
+	</p>
+	<p>
+	  Each week, we&rsquo;ll meet for a 3-hour session, which
+	  includes two parts: <strong>presentation</strong> and
+	  <strong>interactive workshop</strong>
+	  (using real job descriptions and resumes
+	  at your company).  We keep this
+	  class small so everyone’s questions and needs can be addressed.
+	</p>
+      </section>
+    </div>
+
+    <section id="program_curriculum">
+      <ul id="weekly_curriculum">
+	<div id="weekly">
+	  <li>Week 1. <strong>Understanding Your Engineering Team</strong></li>
+	  <ul>
+	    <li>
+	      Software development 101
+	    </li>
+	    <li>
+	      Different roles on a software team
+	    </li>
+	    <li>
+	      The tools and the &ldquo;language&rdquo; they use
+	    </li>
+	  </ul>
+	</div>
+	<div id="weekly">
+	  <li>Week 2. <strong>Working with Your Hiring Managers</strong></li>
+	  <ul>
+	    <li>
+	      Decoding job descriptions
+	    </li>
+	    <li>
+	      Questions to ask during in-takes
+	    </li>
+	    <li>
+	      Feedback and calibration loop
+	    </li>
+	  </ul>
+	</div>
+	<div id="weekly">
+	  <li>Week 3. <strong>Working with Your Technical Candidates</strong></li>
+	  <ul>
+	    <li>
+	      Sourcing 101
+	    </li>
+	    <li>
+	      Decoding technical resumes
+	    </li>
+	    <li>
+	      Questions to ask when screening
+	    </li>
+	  </ul>
+	</div>
+      </ul>
+    </section>
+
+    <div class="status_quo">
+      <%= image_tag('company_signup_drawing_2.png',
+                     :alt => "Da Vinci 2",
+                     :id => 'drawing_2') %>
+
+      <div id="problems_with_status_quo">
+	<h2>Act Now. Here is Why -</h2>
+	<ul>
+	  <li>
+	    Change from passive and reactive
+	    to <strong>proactive recruiting</strong>
+	  </li>
+	  <li>
+	    Become <strong>a true partner</strong> of
+	    your engineering organization
+	  </li>
+	  <li>
+	    Go <strong>beyond keyword matching</strong>
+	  </li>
+	  <li>
+	    Increase both <strong>quality and quantity</strong> of candidates
+	  </li>
+	  <li>
+	    Your developer friends aren&rsquo;t always good at
+	    teaching and explaining
+	  </li>
+	  <li>
+	    You can&rsquo;t really learn technology from Google or Wikipedia
+	  </li>
+	</ul>
+      </div>
+    </div>
+
+    <div id="signup_call_to_action">
+      <h1>Reserve your spot today</h1>
+      <h3>The next session takes place on 3/8, 3/15, and 3/22</h3>
+
+<div style="width:70%; text-align:left; margin-left: auto; margin-right: auto;" ><iframe  src="http://www.eventbrite.com/tickets-external?eid=4886005173&ref=etckt&v=2" frameborder="0" height="260" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe><div style="font-family:Helvetica, Arial; font-size:10px; padding:5px 0 5px; margin:2px; width:100%; text-align:left;" ><a style="color:#ddd; text-decoration:none;" target="_blank" href="http://www.eventbrite.com/r/etckt">Sell Tickets Online</a> <span style="color:#ddd;">through</span> <a style="color:#ddd; text-decoration:none;" target="_blank" href="http://www.eventbrite.com?ref=etckt">Eventbrite</a></div></div>
+
+      <p>
+	Questions? Email <strong><em>geekology@jobfully.com</em></strong>
+	or call <strong>425-247-0999</strong>.
+      </p>
+    </div>
+  </div>
+  
+  <%= render 'layouts/footer' %>
+
+</div>

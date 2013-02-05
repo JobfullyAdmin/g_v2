@@ -10,6 +10,7 @@ header, section, footer, aside, nav, article, hgroup {
 body{
   font-family: 'PT Serif', serif;
   text-align: center;
+  color: #3f261d;
 
   width: 100%;
 }
@@ -376,7 +377,7 @@ div#bio_container {
 }
 
 #learn_more:hover,
-#class_detail {
+#class_detail:hover {
   background: url('darker_coffee_background.png') repeat;
 }
 
@@ -390,4 +391,105 @@ div#bio_container {
 
 #class_detail {
   font-size: 21px;
+}
+
+div.signup_page_body {
+  background: url('landing_below_fold_1.png') repeat;
+}
+
+.signup_top_header {
+  padding-top: 30px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #b59a79;
+  margin: 0 30%;
+}
+
+#drawing_1 {
+  float: right;
+  padding-left: 30px;
+}
+
+.text_drawing_container {
+  text-align: left;
+
+  p {
+    margin: 10px 0;
+    font-size: 18px;
+  }
+}
+
+div.signup_page_body_container {
+  margin: 0 50px;
+}
+
+section#program_curriculum {
+  margin: 15px 0;
+}
+
+ul#weekly_curriculum {
+  list-style: none;
+  font-size: 18px;
+  text-align: left;
+  div#weekly {
+    border: 1px solid #b59a79;
+    padding: 10px;
+    margin: 5px;
+    display: inline-block;
+    width: 30%;
+
+    li {
+      text-align: center;
+    }
+
+    ul li {
+      text-align: left;
+      list-style-position: inside;
+      list-style-type: disc;
+    }
+  }
+}
+
+div#problems_with_status_quo {
+  display: inline-block;
+  background-color: rgba(240,240,240, .5);
+  width: 50%;
+  margin: 0 auto;
+  padding: 10px;
+
+  h2 {
+    margin-bottom: 5px;
+  }
+
+  ul li {
+    text-align: left;
+    font-size: 18px;
+    list-style-position: inside;
+    list-style-type: disc;
+    padding: 3px 3px 3px 12px;
+  }
+}
+
+#drawing_2 {
+  float: left;
+  padding-left: 30px;
+  display: inline-block;
+  width: 250px;
+  height: 250px;
+}
+
+div.status_quo {
+  margin: 20px 0;
+}
+
+div#signup_call_to_action {
+  margin-top: 15px;
+  margin-bottom: 30px;
+
+  h3 {
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 18px;
+  }
 }

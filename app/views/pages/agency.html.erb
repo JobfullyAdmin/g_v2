@@ -1,103 +1,127 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <title>Geekology - Technical Recruiting Training - Agency Program</title>
-  <%= stylesheet_link_tag    "application" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-  <div id="agency_signup_page_body">
+<%= render 'layouts/header' %>
 
-    <header id="signup_top_header">
+<div id="agency_signup_page_body" class="signup_page_body">
+
+  <header class="signup_top_header">
       <h1>Technical Training Intensive</h1>
-      </header>
+  </header>
 
-    <section id="customer_self_identifier">
-      <p>
-	Technical Training Intensive is designed for <strong>technical recruiting professionals</strong>
-	who don&rsquo;t have extensive technical background.  Yet, you are tasked to find <strong>top developers</strong>,
-	<strong>software engineers</strong>, <strong>designers</strong>, <strong>QA engineers</strong>,
-	<strong>techincal PMs</strong>, etc. for your demanding clients.
-	You spend hours reading job descriptions and resumes full of technical terms, technology
-	lingo and jargons.  The cryptic language used by technical people makes it challenging to
-	perform your job to the best of your ability.
-      </p>
+  <div class="signup_page_body_container">
+    <div class="text_drawing_container">
+      <section id="agency_self_identifier" class="customer_self_identifier">
+	<%= image_tag('agency_signup_drawing_1.png',
+                      :alt => "Da Vinci 1",
+                      :id => 'drawing_1') %>
+
+	<p>
+	  Technical Training Intensive is designed for
+	  <strong>technical recruiting professionals</strong>
+	  who don&rsquo;t have extensive technical background.
+	  Yet, you are tasked to hunt down highly technical candidates,
+	  such as <strong>web and mobile developers</strong>,
+	  <strong>software engineers</strong>,
+	  <strong>UI/UX designers</strong>,
+	  <strong>QA engineers</strong>,
+	  <strong>database architects</strong>,
+	  <strong>DevOps engineers</strong>, and the like,
+	  for your demanding clients.
+	  You spend hours reading job descriptions and resumes full
+	  of technical terms, technology
+	  lingo and jargons.  The cryptic language used by technical
+	  people in their resumes and job descriptions makes it
+	  challenging to
+	  perform your job to the best of your ability.
+	</p>
+
       </section>
 
-    <section id="program_description">
-      <p>
-	This course will lay a solid foundation for understanding the inner working of 
-	typical software engineering teams, tools of their trade, how they speak, work individually
-	and as a group.  Using the knowledge you learn in this class, you can have <strong>intelligent and
-	  productive conversations</strong> with the technical people you talk to every day on the job - 
-	the <strong>hiring managers</strong> and your <strong>candidates</strong>.
-      </p>
-      <p>
-	This 3-hour class is organized into two parts: presentation and interactive workshop.  It’s a
-	small class so everyone’s questions and needs can be addressed.
-      </p>
-    </section>
-    
-    <section id="program_curriculum">
-      <p>
-	We will cover the following topics:
-      </p>
+      <section id="program_description">
+	<p>
+	  This course will lay a solid foundation for understanding
+	  the inner working of
+	  typical software engineering teams, tools of their trade,
+	  how they speak, work individually
+	  and as a group.  Using the knowledge you learn in this class,
+	  you can have
+	  <strong>intelligent and productive conversations</strong>
+	  with the technical people you talk to every day on the job -
+	  the <strong>hiring managers</strong> and your
+	  <strong>candidates</strong>.
+	</p>
+	<p>
+	  This 3-hour class is organized into two parts:
+	  <strong>presentation</strong> and
+	  <strong>interactive workshop</strong>.  It’s a
+	  small class so everyone’s questions and needs can be addressed.
+	</p>
+      </section>
+    </div>
+
+    <section id="agency_curriculum">
+      <h3>We will cover the following topics:</h3>
       <ul>
 	<li>
 	  <strong>Software development</strong> fundamentals
 	</li>
 	<li>
-	  Different <strong>roles</strong> on a <strong>software engineering team</strong>
+	  Different <strong>roles</strong> on a
+	  <strong>software team</strong>
 	</li>
 	<li>
-	  The <strong>tools</strong> they use and the &ldquo;<strong>language</strong>&rdquo; they speak
+	  The <strong>tools</strong> they use and
+	  the &ldquo;<strong>language</strong>&rdquo; they speak
 	</li>
 	<li>
 	  What to do when running into <strong>new technical terms</strong>
 	</li>
-	</ul>
+      </ul>
     </section>
 
+    <div class="status_quo">
+      <%= image_tag('agency_signup_drawing_2.png',
+                     :alt => "Da Vinci 2",
+                     :id => 'drawing_2') %>
+
+      <div id="problems_with_status_quo">
+	<h2>Act Now. Here is Why -</h2>
+	<ul>
+	  <li>
+	    Don't let great candidates slip by without even knowing
+	  </li>
+	  <li>
+	    There is no &ldquo;winging it&rdquo; in
+	    technical recruiting
+	  </li>
+	  <li>
+	    Go <strong>beyond keyword matching</strong>
+	  </li>
+	  <li>
+	    Increase both <strong>quality and quantity</strong> of candidates
+	  </li>
+	  <li>
+	    Your developer friends aren&rsquo;t always good at
+	    teaching and explaining
+	  </li>
+	  <li>
+	    You can&rsquo;t really learn technology from Google or Wikipedia
+	  </li>
+	</ul>
+      </div>
+    </div>
+
     <div id="signup_call_to_action">
-      <h1>This class takes place once per month on a Friday afternoon.</h1>
-      
+      <h1>Reserve your spot today</h1>
+      <h3>The next session takes place on 3/8</h3>
+
+<div style="width:70%; text-align:left; margin-left: auto; margin-right: auto;" ><iframe  src="http://www.eventbrite.com/tickets-external?eid=5429732476&ref=etckt&v=2" frameborder="0" height="260" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe><div style="font-family:Helvetica, Arial; font-size:10px; padding:5px 0 5px; margin:2px; width:100%; text-align:left;" ><a style="color:#ddd; text-decoration:none;" target="_blank" href="http://www.eventbrite.com/r/etckt">Sell Tickets Online</a> <span style="color:#ddd;">through</span> <a style="color:#ddd; text-decoration:none;" target="_blank" href="http://www.eventbrite.com?ref=etckt">Eventbrite</a></div></div>
+
       <p>
-	<a href="http://google.com" id="individual_signup">Individual Sign Up<br>$299/person</a>
-      </p>
-      <p>
-	<a href="http://google.com" id="group_signup">Group Sign Up<br>$249/person (group of 3+)</a>
+	Questions? Email <strong><em>geekology@jobfully.com</em></strong>
+	or call <strong>425-247-0999</strong>.
       </p>
     </div>
-    
-    <div id="problems_with_status_quo">
-      <h1>Why sign up for this program now</h1>
-      <ul>
-	<li>
-	  Don&rsquo;t let great candidates slip by without even knowing
-	</li>
-	<li>
-	  There is no &ldquo;winging it&rdquo; in technical recruiting
-	</li>
-	<li>
-	  Keyword match just won&rsquo;t cut it
-	</li>
-	<li>
-	  Wikipedia and Google only lead to a rabbit hole when you don&rsquo;t have technical knowledge
-	</li>
-	<li>
-	  Your developer friends aren&rsquo;t always good at teaching and explaining... if you&rsquo;re lucky
-	  enough to get an hour of their time
-	</li>
-	<li>
-	  You can&rsquo;t keep up with fast-changing technologies with rote learning
-	</li>
-      </ul>
-    </div>
-
-    <%= render 'layouts/footer' %>
-
   </div>
-</body>
-</html>
+
+  <%= render 'layouts/footer' %>
+
+</div>

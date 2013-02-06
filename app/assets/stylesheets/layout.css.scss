@@ -429,6 +429,24 @@ section#program_curriculum {
   margin: 15px 0;
 }
 
+section#agency_curriculum {
+  font-size: 18px;
+  border: 1px solid #b59a79;
+  padding: 10px;
+  margin: 10px auto;
+  width: 60%;
+
+  h3 {
+    width: 60%;
+    margin: 0 auto 10px auto;
+    border-bottom: 1px solid #b59a79;
+  }
+
+  ul li {
+    list-style-position: inside;
+  }
+}
+
 ul#weekly_curriculum {
   list-style: none;
   font-size: 18px;

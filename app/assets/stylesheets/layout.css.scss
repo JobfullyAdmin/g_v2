@@ -406,7 +406,10 @@ div.signup_page_body {
 
 #drawing_1 {
   float: right;
-  padding-left: 30px;
+  padding-right: 30px;
+  padding-left: 10px;
+  width: 250px;
+  height: 250px;
 }
 
 .text_drawing_container {
@@ -454,7 +457,7 @@ div#problems_with_status_quo {
   background-color: rgba(240,240,240, .5);
   width: 50%;
   margin: 0 auto;
-  padding: 10px;
+  padding: 20px;
 
   h2 {
     margin-bottom: 5px;

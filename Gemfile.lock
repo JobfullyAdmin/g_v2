@@ -132,6 +132,6 @@ DEPENDENCIES
   html5-rails
   jquery-rails
   rack-google_analytics
-  rails (= 3.2.11)
+  rails
   sass-rails
   uglifier

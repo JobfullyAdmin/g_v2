@@ -514,3 +514,36 @@ div#signup_call_to_action {
     font-size: 18px;
   }
 }
+
+#hrci_preapproved {
+  float: left;
+  padding: 5px 30px;
+  width: 70px;
+  height: 65px;
+}
+
+section#hrci_credits {
+  margin-right: 30px;
+  p {
+    margin: 5px;
+    padding: 5px;
+    font-style: italic;
+    font-size: 16px;
+    background-color: rgba(240,240,240, .3);
+  }
+}
+
+div#more_testimonials {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 15px;
+  border: 1px solid #b59a79;
+
+  ul li {
+    text-align: center;
+    font-size: 18px;
+    list-style: none;
+    padding: 3px 15px 3px 10px;
+  }
+}

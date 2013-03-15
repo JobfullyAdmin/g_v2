@@ -54,12 +54,26 @@ header#page_header{
 }
 
 footer#page_footer {
-  background: url('footer_background.png') no-repeat;
-  font-size: 16px;
-  text-align: right;
+  background: url('footer_background.png') repeat;
   color: white;
-  height: 75px;
-  padding: 10px 20px;
+  height: 70px;
+  display: inline-box;
+  padding-left: 15px;
+  padding-top: 10px;
+
+  p#company {
+    font-size: 16px;
+    width: 40%;
+    text-align: right;
+    float: right;
+  }
+
+  p#disclaimer {
+    font-size: 14px;
+    width: 40%;
+    text-align: left;
+    float: left;
+  }
 }
 
 body#program_page_body,
@@ -76,7 +90,10 @@ body#landing_page_body{
 }
 
 div#landing_page_above_fold{
-  background: url('landing_above_fold.png') repeat;
+  background:
+    url('hrci_preapproval_seal.png') no-repeat 5% 5%,
+    url('landing_above_fold.png') repeat;
+    background-size: 180px, auto;
 }
 
 #definition{
@@ -213,7 +230,11 @@ div#landing_page_call_to_action {
 }
 
 div#program_page_above_fold{
-  background: url('program_above_fold.png') repeat;
+  background:
+    url('hrci_preapproval_seal.png') no-repeat 5% 5%,
+    url('program_above_fold.png') repeat;
+    background-size: 180px, auto;
+
   header {
     text-align: right;
     padding-right: 5%;
@@ -338,6 +359,14 @@ div#below_fold_container {
   td {
     vertical-align: top;
     padding: 3px;
+  }
+}
+
+table#credits {
+  margin-bottom: 15px;
+  border: 1px solid #b59a79;
+  td {
+    padding: 3px 8px;
   }
 }
 
@@ -524,12 +553,14 @@ div#signup_call_to_action {
 
 section#hrci_credits {
   margin-right: 30px;
+  margin-top: 5px;
+  margin-bottom: 5px;
   p {
     margin: 5px;
     padding: 5px;
     font-style: italic;
     font-size: 16px;
-    background-color: rgba(240,240,240, .3);
+    background-color: rgba(240,240,240, .5);
   }
 }
 

@@ -7,6 +7,8 @@ Gtest::Application.routes.draw do
 
   get "pages/companyhr"
 
+  get "pages/contact"
+
   get "pages/custom"
 
   # The priority is based upon order of creation:

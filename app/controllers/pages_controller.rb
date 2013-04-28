@@ -11,6 +11,9 @@ class PagesController < ApplicationController
   def companyhr
   end
 
+  def contact
+  end
+
   def custom
   end
 end

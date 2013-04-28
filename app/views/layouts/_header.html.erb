@@ -13,7 +13,7 @@
       <li><%= link_to "Why Geekology?", root_url %></li>
       <li><%= link_to "Classes", url_for(:controller => :pages, :action => :program) %></li>
       <li><%= link_to "Blog", "http://blog.geekology.biz" %></li>
-      <li><%= link_to "Contact Us", "http://www.jobfully.com/contact_us" %></li>
+      <li><%= link_to "Contact Us", url_for(:controller => :pages, :action => :contact) %></li>
     </ul>
   </nav>
 

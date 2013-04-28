@@ -92,7 +92,7 @@ body#landing_page_body{
 div#landing_page_above_fold{
   background:
     url('hrci_preapproval_seal.png') no-repeat 5% 5%,
-    url('landing_above_fold.png') repeat;
+    url('landing_above_fold.jpg') repeat;
     background-size: 180px, auto;
 }
 
@@ -216,7 +216,7 @@ div#pain_point_answer {
 }
 
 div#landing_page_call_to_action {
-  background: url('landing_below_fold_2.png') repeat;
+  background: url('landing_below_fold_2.jpg') repeat;
   padding: 20px 0;
 
   p {
@@ -232,7 +232,7 @@ div#landing_page_call_to_action {
 div#program_page_above_fold{
   background:
     url('hrci_preapproval_seal.png') no-repeat 5% 5%,
-    url('program_above_fold.png') repeat;
+    url('program_above_fold.jpg') repeat;
     background-size: 180px, auto;
 
   header {
@@ -314,19 +314,19 @@ div.program_title {
 
 #hr_program_title {
   background: 
-    url('program_title_1.png') no-repeat center center,
+    url('program_title_1.jpg') no-repeat center center,
     url('landing_below_fold_1.png');
 }
 
 #agency_program_title {
   background: 
-    url('program_title_2.png') no-repeat center center,
+    url('program_title_2.jpg') no-repeat center center,
     url('landing_below_fold_1.png');
 }
 
 #bigco_program_title {
   background: 
-    url('program_title_3.png') no-repeat center center,
+    url('program_title_3.jpg') no-repeat center center,
     url('landing_below_fold_1.png');
 }
 
@@ -370,7 +370,7 @@ table#credits {
 }
 
 div#program_page_bio {
-  background: url('program_page_bio.png') repeat;
+  background: url('program_page_bio.jpg') repeat;
   padding: 15px 0;
 
   h1 {

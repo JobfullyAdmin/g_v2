@@ -20,7 +20,7 @@ group :assets do
   # gem 'therubyracer', :platforms => :ruby
 end
 
-gem 'haml-rails' # Optional - to generate haml
+gem 'haml' # Optional - to generate haml
 
 gem 'jquery-rails'
 gem 'html5-rails'

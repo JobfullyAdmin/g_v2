@@ -1,0 +1,18 @@
+%div{id: "landing_page_body"}
+
+	%div{id: "landing_page_above_fold"}		
+		= render 'pages/landing/definition'
+		= render 'pages/landing/landing_page_above_fold_heading'
+		= render 'pages/landing/above_fold_container'
+	
+	%div{id: "landing_page_below_fold"}  
+		%header
+			%hgroup
+				%h1 Technical Knowledge - a core skill for technical recruiting
+				%h2 And, it&rsquo;s possible for non-programmers to have this knowledge
+				
+		= render 'pages/landing/landing_page_below_fold_body.html.haml'
+		  
+	%div{id: "landing_page_call_to_action"}
+		%p
+			= link_to "Find out how you can learn the geek language in an easy-to-understand manner", url_for(:controller => :pages, :action => :program), :id => 'landing_page_cta'

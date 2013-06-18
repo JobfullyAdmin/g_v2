@@ -1,11 +1,12 @@
-%header{id: "page_header", role: "banner"}
-	= link_to(image_tag("geekology_logo.png", size: "250x66",
-	alt: "Geekology - Technical Recruiting Training", id: "geekology_logo"),
-	root_url, title: "Geekology home")
-		
-	%nav{id: "main_top_menu"}
-		%ul
-			%li= link_to "Why Geekology?", root_url
+%div{class: "row"}
+	%div{class: "navbar"}
+		%div{class:"brand pull-left", id: "page_header", role: "banner"}
+			= link_to(image_tag("geekology_logo.png", size: "250x66",
+			alt: "Geekology - Technical Recruiting Training", id: "geekology_logo"),
+			root_url, title: "Geekology home")
+
+		%ul{id: "main_top_menu", class:"nav pull-right"}
+			%li{class: "active"}= link_to "Why Geekology?", root_url
 			%li= link_to "Classes", url_for(:controller => :pages, :action => :program)
 			%li= link_to "Blog", "http://blog.geekology.biz"
 			%li= link_to "Contact Us", url_for(:controller => :pages, :action => :contact)

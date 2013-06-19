@@ -1,15 +1,132 @@
-%div{id: "program_page_body"}
-	%div{id: "program_page_above_fold"}
-		= render 'pages/program/above_fold'
-	
-	%div{id: "program_page_below_fold"}
-		= render 'pages/program/below_fold_header'
+%div{class: "row brown_title_banner"}
+	%div{class: "span12"}
+		%header
+			%hgroup
+				%h1 Our Training Programs
+				%h2 &ldquo;Guessing works sometimes. Knowing works all the time.&ldquo;
+
+%div{class: "row", id: "program_difference"}
+	%div{class: "span5"}
+		%h3 What makes our programs different?
+	%div{class: "span7", id: "difference_list"}
+		%p
+			%ul
+				%li Specifically designed for <strong>recruiting technical talent</strong>
+				%li Everything is <strong>easy-to-understand</strong>
+				%li Learn <strong>only</strong> what&rsquo;s necessary
+				%li Combining <strong>software knowledge</strong> and <strong>recruiting expertise</strong>
+
+%div{class: "row brown_banner", id: "choose_programs"}
+	%div{class: "span12"}
+		%header
+			%hgroup
+				%h2 Choose from these training solutions to meet your specific recruiting needs
+
+%div{class: "row", id: "program_1"}
+	%div{class: "span4", id: "program_1_box"}
+		%h1 Technical Recruiting 101
+		%h2 <em>3 half-day classes</em>
+		= link_to "Detail & Sign up", url_for(:controller => :pages, :action => :companyhr), 
+		:class => 'btn btn-large'
+	%div{class: "span8", id: "program_1_description"}
+		%div{id: "certification"}
+			= image_tag('hrci_preapproval_seal.png', :alt => "Preapproval Seal", id: "small_seal")
+			%div{id:"cert_words"}
+				<em><strong>7.5credit hours (general) toward PHR, SPHR and GPHR recertification through the HR Certification Institute.</strong></em>
+		%table
+			%tr
+				%td <strong>Who</strong>
+				%td <strong>Company HR/recruiting professionals</strong> who need to fill technical positions
+			%tr
+				%td <strong>Why</strong>
+				%td Contribute to meeting company's critical needs in technical talent acquisition
+			%tr
+				%td <strong>How</strong>
+				%td
+					%ul
+						%li
+							<strong>Become a partner of engineering</strong> because you play a key role in
+							talent strategy when you understand how your engineering team works and its talent needs
+						%li
+							<strong>Help hiring managers</strong> because you reduce their recruiting work load
+							when you learn and apply their candidate selection principles
+						%li
+							<strong>Create business impact</strong> because you scout the right talent to drive company
+							growth when you know how to spot and find top technical candidates
 		
-		%section{id: "program_page_below_fold_body"}
-			%div{id: "below_fold_container"}
-				= render 'pages/program/hr_program'
-				= render 'pages/program/agency_program'
-				= render 'pages/program/bigco_program'
-				
-	%div{id: "program_page_bio"}
-		= render 'pages/program/bio_container'
+
+%div{class: "row", id: "program_2"}
+	%div{class: "span4", id: "program_2_box"}
+		%h1 Technical Training Intensive
+		%h2 <em>A 3-hour workshop</em>
+		= link_to "Detail & Sign up", url_for(:controller => :pages, :action => :agency),
+		:class => 'btn btn-large'
+	%div{class: "span8", id: "program_2_description"}
+		%table
+			%tr
+				%td <strong>Who</strong>
+				%td <strong>Agency recruiters</strong> who want to differentiate themselves and stay ahead of the crowd
+			%tr
+				%td <strong>Why</strong>
+				%td Uncover hidden gems and build better relationships with technical talent
+			%tr
+				%td <strong>How</strong>
+				%td
+					%ul
+						%li
+							<strong>Better client communication</strong> because you &rdquo;get it&ldquo;
+							when you have an overall understanding of how software is made
+						%li
+							<strong>Confident candidate selection</strong> because you develop insights when you 
+							know how different roles function and interact
+						%li
+							<strong>Stronger relationships</strong> with tech community because you speak their language
+							intelligently when you truly understand the tools of their trade
+
+
+%div{class: "row", id: "program_3"}
+	%div{class: "span4", id: "program_3_box"}
+		%h1 Technical Recruiting Premium
+		%h2 <em>Custom designed programs</em>
+		%h3 Call us at 425-247-0999
+	%div{class: "span8", id: "program_3_description"}
+		%table
+			%tr
+				%td <strong>Who</strong>
+				%td <strong>Corporate recruiting teams</strong> that need customized training solutions
+			%tr
+				%td <strong>Why</strong>
+				%td Boost results of talent acquisition metrics
+			%tr
+				%td <strong>How</strong>
+				%td
+					%ul
+						%li
+							<strong>Customized solutions</strong> to increase technical recruiting competency level
+							based on your team’s unique needs and job market situation
+						%li
+							<strong>Empower your recruiting team</strong> to drive critical business results by meeting talent growth targets
+						%li
+							<strong>Hard skill development for recruiting staff</strong> pays off in the form of better
+							talent acquisition results, recruiter performance and retention
+						%br/
+
+%div{class: "row brown_banner", id: "instructor"}
+	%div{class: "span12"}
+		%h1 
+			Instructor: Mei Lu
+		= link_to image_tag('linkedin_logo.png'), "http://www.linkedin.com/in/meiiam/"
+		
+%div{class: "row", id: "bio"}
+	%div{class: "span12"}
+		%p
+			Mei Lu is the Founder and CEO of Jobfully.com, an online software
+			start-up focusing on technology job market. Before starting 
+			Jobfully, Mei recruited top talent for Silicon Valley technology
+			companies, including OpenTable, OutSpark, RockYou and TubeMogul.
+			Mei started her career as a software engineer, building software
+			at Qpass, M.I.T, and MicroStrategy.
+		%p
+			She received her Master’s Degree in Computer Science from 
+			University of Pennsylvania and her Master’s Degree in Engineering
+			from Carnegie Mellon University.

@@ -1,11 +1,123 @@
-%div{id: "companyhr_signup_page_body", class: "signup_page_body"}
+%div{class: "row brown_title_banner"}
+	%div{class: "span12"}
+		%header
+			%h1 Technical Recruiting 101
 
-	%header{class: "signup_top_header"}
-		%h1 Technical Recruiting 101
+%div{class: "row", id: "cert_banner"}
+	%div{class: "span2"}
+		= image_tag('hrci_preapproval_seal.png', :alt => "hrci_preapproved", :id => 'hrci_preapproved')
+	%div{class: "span10"}
+		%div{id:"cert_blurb"}
+			This program has been approved for <strong>7.5 (General)
+			recertification credit hours toward PHR, SPHR and GPHR
+			recertification </strong> through the HR Certification Institute.
+			The use of this seal is not an endorsement by the
+			HR Certification Institute of the quality of the program.
+			It means that this program has met the HR Certification
+			Institute's criteria to be pre-approved for recertification credit.
 		
-	%div{class: "signup_page_body_container"}
-		= render 'pages/companyhr/text_drawing_container'
-		= render 'pages/companyhr/program_curriculum'
-		= render 'pages/companyhr/status_quo'
-		= render 'pages/companyhr/more_testimonials'
-		= render 'pages/companyhr/signup_call_to_action'
+%div{class:"row"}
+	%div{class:"span4 brown_box"}
+		%div
+			%h1 Week 1: Understanding Your Engineering Team
+			%ul
+				%li Software development 101
+				%li Different roles on a software team
+				%li The tools and the &ldquo;language&rdquo; they use
+	%div{class:"span4 brown_box"}
+		%div
+			%h1 Week 2: Working with Your Hiring Managers
+			%ul
+				%li Decoding job descriptions
+				%li Questions to ask during in-takes
+				%li Feedback and calibration loop
+	%div{class:"span4 brown_box"}
+		%div
+			%h1 Week 3: Working with Your Technical Candidates
+			%ul
+				%li Sourcing 101
+				%li Decoding technical resumes
+				%li Questions to ask when screening
+
+%div{class: "row", id:"companyhr_description"}
+	%div{class: "span12"}
+		%div
+			%p
+				Technical Recruiting 101 is designed for
+				<strong>in-house HR/recruiting professionals</strong>
+				who want to make an impact on the company's business by
+				meeting its critical
+				<strong>technical talent acquisition</strong> needs,
+				yet feeling bogged down by the jargon
+				and cryptic language in job descriptions and
+				resumes, commonly used by technical people.
+			%p
+				This course will lay a solid foundation for understanding
+				the inner working of 
+				typical <strong>software engineering teams</strong>,
+				tools of the trade,
+				how technical people work individually
+				and as a group.  You&rsquo;ll learn how to
+				<strong>decode technical terms</strong>,
+				<strong>ask revealing questions</strong> to
+				hiring managers and candidates, find
+				<strong>resources and best practices</strong>
+				for technical recruiting. You can apply to this
+				knowledge immediately and
+				make your recruiting easier and more productive.
+			%p
+				Each week, we&rsquo;ll meet for a 3-hour session, which
+				includes two parts: <strong>presentation</strong> and
+				<strong>interactive workshop</strong>
+				(using real job descriptions and resumes
+				at your company).  We keep this
+				class small so everyone’s questions and needs can be addressed.
+
+%div{class: "row brown_banner"}
+	%div{class: "span12"}
+		%h1 Act Now, Here's Why:
+		
+%div{class: "row", id: "companyhr_act_now"}
+	%div{class: "span6", id: "companyhr_quo"}
+		%div
+			%p
+				%ul
+					%li Change from passive and reactive to <strong>proactive recruiting</strong>
+					%li Become <strong>a true partner</strong> of your engineering organization
+					%li Go <strong>beyond keyword matching</strong>
+					%li Increase both <strong>quality and quantity</strong> of candidates
+					%li Your developer friends aren&rsquo;t always good at teaching and explaining
+					%li You can&rsquo;t really learn technology from Google or Wikipedia
+	%div{class: "span6", id: "companyhr_test"}
+		%div
+			%p
+				%ul
+					%li
+						&ldquo;I liked how you simplified everything and helped us &lsquo;connect the dots.&rsquo; [This class was] So helpful! I feel much more knowledgeable.&rdquo;
+						%br/
+						\- <em>R.C., Wetpaint</em>
+						%br/
+						%br/
+					%li
+						&ldquo;[Since taking the class,] it's been surprising how much we have started to refer back to this class or use the things that we have learned. This has been super helpful.&rdquo;
+						%br/
+						\- <em>Heather Carpenter, INRIX</em>
+						
+%div{class: "row brown_banner"}
+	%div{class: "span12"}
+		%h1 Reserve your spot today
+
+%div{class: "row", id: "reserve_info"}
+	%div{class: "span12"}
+		%h3
+			Location: Seattle/Eastside (in-person) or Online
+			%br/
+			The next session takes place 1:30pm-4:30pm on 7/11, 7/18, and 7/25
+
+%div{class: "row brown_banner", id: "companyhr_signup"}
+	%div{class: "span12"}
+		<div style="width:70%; text-align:left; margin-left: auto; margin-right: auto;"><iframe  src="http://www.eventbrite.com/tickets-external?eid=6608230395&ref=etckt&v=2" frameborder="0" height="293" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe><div style="font-family:Helvetica, Arial; font-size:10px; padding:5px 0 5px; margin:2px; width:100%; text-align:left;" ><a style="color:#ddd; text-decoration:none;" target="_blank" href="http://www.eventbrite.com/r/etckt">Online event registration</a><span style="color:#ddd;"> for </span><a style="color:#ddd; text-decoration:none;" target="_blank" href="http://www.eventbrite.com/event/6608230395?ref=etckt">Technical Recruiting 101 (June 2013)</a> <span style="color:#ddd;">powered by</span> <a style="color:#ddd; text-decoration:none;" target="_blank" href="http://www.eventbrite.com?ref=etckt">Eventbrite</a></div></div>
+		
+%div{class: "row", id: "companyhr_contact"}
+	%div{class: "span12"}
+		Questions? Email <strong><em>geekology@jobfully.com</em></strong> or call <strong>425-247-0999</strong>

@@ -1,8 +1,37 @@
-%div{id: "contact_page_body"}
+= render 'pages/contact/mailchimp_form'
 
-	%div{id:"company_info_email_form_container"}
-		%header{id: "contact_us"}
+%div{class: "row", id: "contact_us"}
+	%div{class: "span12"}
+		%header
 			%h1 Contact us - We want to hear from you
 			
-		= render 'pages/contact/contact_page_company_info'
-		= render 'pages/contact/mailchimp_form'
+%div{class: "row contact_box"}
+	%div{class: "span5 contact_left"}
+		%h2 Questions and Support
+	%div{class: "span7 contact_right"}
+		%div
+			%p Email is a great to get in touch. Drop us a line at <em><strong>geekology@jobfully.com</strong></em>.
+			%p You can also reach us at <strong><em>425.247.0999</em></strong>
+		
+%div{class: "row contact_box"}
+	%div{class: "span5 contact_left"}
+		%h2 Mailing Address
+	%div{class: "span7 contact_right"}
+		%div
+			%p Snail mail is so quaint. Send us something at:
+			%p{id: "address"} Geekology (a Jobfully company)</br>15127 NE 24th St., #575</br>Redmond, Wa 98052
+
+%div{class: "row contact_box"}
+	%div{class: "span5 contact_left"}
+		%h2 Media Inquiries
+	%div{class: "span7 contact_right"}
+		%div
+			%p
+				We'd be glad to provide expert insights into all aspect of technical recruiting, including:
+				%ul
+					%li Sourcing technical roles
+					%li Attracting technical talent
+					%li Career development for software professionals
+					%li Candidate experience
+					%li Compensation package for geeks
+					%li and more...

@@ -1,12 +1,14 @@
-%div{class: "row"}
-	%div{class: "navbar"}
-		%div{class:"brand pull-left", id: "page_header", role: "banner"}
-			= link_to(image_tag("geekology_logo.png", size: "250x66",
-			alt: "Geekology - Technical Recruiting Training", id: "geekology_logo"),
-			root_url, title: "Geekology home")
-
-		%ul{id: "main_top_menu", class:"nav pull-right"}
-			%li{class: "active"}= link_to "Why Geekology?", root_url
-			%li= link_to "Classes", url_for(:controller => :pages, :action => :program)
-			%li= link_to "Blog", "http://blog.geekology.biz"
-			%li= link_to "Contact Us", url_for(:controller => :pages, :action => :contact)
+%div{class: "row",id: "page_header"}
+	%div{class: "span2"}
+		= link_to(image_tag('hrci_preapproval_seal.png', :alt => "Preapproval Seal", id: "seal"),
+		root_url, title: "Geekology home")
+	%div{class: "span3", role: "banner"}
+		= link_to(image_tag("geekology_logo.png", size: "250x66",
+		alt: "Geekology - Technical Recruiting Training", id: "geekology_logo"),
+		root_url, title: "Geekology home")
+		
+	%div{class: "span7", id: "nav-cluster"}
+		%div{class: "head_nav"}= link_to "Contact Us", url_for(:controller => :pages, :action => :contact)
+		%div{class: "head_nav"}= link_to "Blog", "http://blog.geekology.biz"
+		%div{class: "head_nav"}= link_to "Classes", url_for(:controller => :pages, :action => :program)
+		%div{class: "head_nav"}= link_to "Why Geekology?", root_url

@@ -1,11 +1,72 @@
-%div{id: "landing_page_body"}
+%div{class: "row",id: "landing_page_above_fold_heading"}
+	%div{class: "span12"}
+		%header
+			%hgroup
+				%h1 Understanding Geeks Made Simple
+				%h2 You don&rsquo;t need to be a geek to master technical recruiting.
 
-	%div{id: "landing_page_above_fold"}
-		= render 'pages/landing/above_fold'
-	
-	%div{id: "landing_page_below_fold"}  
-		= render 'pages/landing/below_fold'
-		  
-	%div{id: "landing_page_call_to_action"}
+%div{class: "row", id: "geekology_grab"}
+	%div{class: "span6", id: "what_is_geekology"}
+		%h1
+			Introducing - Geekology
 		%p
-			= link_to "Find out how you can learn the geek language in an easy-to-understand manner", url_for(:controller => :pages, :action => :program), :id => 'landing_page_cta'
+			New <strong> technical recruiting training </strong> programs that give you
+			everything you need to know about <strong>technology</strong>, <strong>engineering teams</strong>,
+			and <strong>technical talent</strong> in <strong>plain English</strong>
+		%p{class: "btn btn-large"}
+			= link_to "Learn more", url_for(:controller => :pages, :action => :program), :class => 'text_button', :id => 'learn_more'
+		
+	%div{class: "span6", id: "social_proof"}
+		%ul
+			%li 
+				&ldquo;I was surprised how much better I understand technology [after this class].&rdquo;
+				%br/
+				\- <em>Melissa Dela Cruz, DoubleDown Interactive</em>
+				%br/
+				%br/
+			%li
+				&ldquo;10 out of 10. [This class] made me feel more confident about recruiting and talking to my engineering team.&rdquo;
+				%br/
+				\- <em>Laura Bott, NetMotion Wireless</em>
+				%br/
+				%br/
+			%li
+				&ldquo;I got a lot from [the class] and enjoyed it. It was surprising how much I learned and how much more
+				prepared I feel to source and screen candidates.&rdquo;
+				%br/
+				\- <em>Abbie Samson, INRIX</em>
+	
+%div{class: "row", id: "below-fold-heading"}
+	%div{class: "span12"}
+		%header
+			%hgroup
+				%h1 Technical Knowledge: a core skill for technical recruiting
+				%h2 And, it&rsquo;s possible for non-programmers to have this knowledge
+		
+%div{class: "row", id: "after_conditions"}
+	%div{class: "span4"}
+		%h3 What can our training do for you?
+	%div{class: "span8"}
+		%ul
+			%li Have Intelligent conversations with technical people
+			%li Make smart candiate selections and confident decisions
+			%li Identify high potential candidates that might have been missed
+			%li Gain recognition for your talent acquisition contribution
+
+%div{class: "row", id: "pain_point_question"}
+	%div{class: "span12"}
+		%h1 So, why don&rsquo;t most recruiters have enough technical knowledge?
+
+%div{class: "row", id: "landing_call_to_action"}
+	%div{class: "span6"}
+		%p
+			Knowing what technical knowledge is <strong>needed</strong> 
+			and <strong>not needed</strong> for
+			technical recruiting requires insights and experience from
+			someone who is <strong>technical</strong> and
+			<strong>understands recruiting</strong>
+	%div{class: "span6"}
+		%p
+			You can learn the geek language in an easy-to-understand manner
+		%p{class: "btn large primary"}
+			= link_to "Find out how", url_for(:controller => :pages, :action => :program), :id => 'landing_page_cta'

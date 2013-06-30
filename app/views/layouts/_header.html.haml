@@ -1,14 +1,12 @@
-%div{class: "row",id: "page_header"}
+%div{class: "row",id:"page_header"}
 	%div{class: "span2"}
-		= link_to(image_tag('hrci_preapproval_seal.png', :alt => "Preapproval Seal", id: "seal"),
-		root_url, title: "Geekology home")
-	%div{class: "span3", role: "banner"}
-		= link_to(image_tag("geekology_logo.png", size: "250x66",
-		alt: "Geekology - Technical Recruiting Training", id: "geekology_logo"),
-		root_url, title: "Geekology home")
+		%div{id:"main_seal"}
+			%div{id:"main_seal_title"}
+				= link_to "School Of Geekology", root_url
+			%div{id:"main_seal_logo"}
+				= link_to "GK", root_url
 		
-	%div{class: "span7", id: "nav-cluster"}
+	%div{class: "span7 offset3", id: "nav-cluster"}
 		%div{class: "head_nav"}= link_to "Contact Us", url_for(:controller => :pages, :action => :contact)
 		%div{class: "head_nav"}= link_to "Blog", "http://blog.geekology.biz"
 		%div{class: "head_nav"}= link_to "Classes", url_for(:controller => :pages, :action => :program)
-		%div{class: "head_nav"}= link_to "Why Geekology?", root_url

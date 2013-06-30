@@ -1,19 +1,23 @@
+%div{class:"row", id: "vit_banner"}
+	%div{class: "span12"}
+
 %div{class: "row",id: "landing_page_above_fold_heading"}
 	%div{class: "span12"}
 		%header
 			%hgroup
-				%h1 Understanding Geeks Made Simple
-				%h2 You don&rsquo;t need to be a geek to master technical recruiting.
-
-%div{class: "row", id: "geekology_grab"}
-	%div{class: "span12", id: "what_is_geekology"}
-		%h1
-			Introducing <em>Geekology</em>
-		%h2
-			%br/
-			New technical recruiting training programs that give you everything you need to know about technology, engineering teams, and technical talent in plain English
-		%p{class: "btn btn-large"}
-			= link_to "Learn more", url_for(:controller => :pages, :action => :program), :class => 'text_button', :id => 'learn_more'
+				%div
+					%h2 Knowing People is an Art, Knowing Tech is a Science
+				%div
+					%h1 <span>Geekology</span> is both
+				%div
+					%h2 Master Technical Recruiting without being a geek:
+	%div{class: "row"}
+		%div{class: "span6"}
+			%p{class: "btn btn-large"}
+				= link_to "3 Half Day Classes:", url_for(:controller => :pages, :action => :program), :class => 'text_button', :id => 'learn_more'
+		%div{class: "span6"}
+			%p{class: "btn btn-large"}
+				= link_to "3 Hour Bootcamp:", url_for(:controller => :pages, :action => :program), :class => 'text_button', :id => 'learn_more'
 
 %div{class: "row"}
 	%div{class: "span4 social_proof"}
@@ -35,6 +39,76 @@
 				prepared I feel to source and screen candidates.&rdquo;
 				%br/
 				\- <em>Abbie Samson, INRIX</em>
+				
+%div{class: "row new_brown_banner", id: "learn_the_science"}
+	%div{class: "span2"}
+		=image_tag('VITE-AEREA.png', id: 'learn_science_pic')
+	%div{class: "span10"}
+		%h1
+			Learn the Science of Geeks:
+			
+%div{class: "row"}
+	%div{class: "span6"}
+		%div{class:"new_white_box"}
+			%div{class: "small_logo"}
+				&Delta;
+			%div{class: "white_box_words"}
+				Understand the Software Development Cycle
+	%div{class: "span6"}
+		%div{class:"new_white_box"}
+			%div{class: "small_logo"}
+				&Sigma;
+			%div{class: "white_box_words"}
+				Decode Technical Job Descriptions and Resumes
+			
+%div{class: "row"}
+	%div{class: "span6"}
+		%div{class:"new_white_box"}
+			%div{class: "small_logo"}
+				&Pi;
+			%div{class: "white_box_words"}
+				Learn the Tools They Use and the Launguage They Speak
+	%div{class: "span6"}
+		%div{class:"new_white_box"}
+			%div{class: "small_logo"}
+				&Omega;
+			%div{class: "white_box_words"}
+				Learn How to React to New Technical Terms
+
+%div{class: "row new_brown_banner", id: "learn_the_art"}
+	%div{class: "span2"}
+		=image_tag('joconde.png', id: 'learn_science_pic')
+	%div{class: "span10"}
+		%h1
+			Learn the Art of <span id="of_geekology">Geekology</span>:
+			
+%div{class: "row"}
+	%div{class: "span6"}
+		%div{class:"new_white_box"}
+			%div{class: "small_logo"}
+				&alpha;
+			%div{class: "white_box_words"}
+				Have Intellegent Conversations With Technical People
+	%div{class: "span6"}
+		%div{class:"new_white_box"}
+			%div{class: "small_logo"}
+				&xi;
+			%div{class: "white_box_words"}
+				Make Smart Candidate Selections and Confident Decisions
+
+%div{class: "row"}
+	%div{class: "span6"}
+		%div{class:"new_white_box"}
+			%div{class: "small_logo"}
+				&delta;
+			%div{class: "white_box_words"}
+				Identify High Potential Candidates That Might Have Been Missed
+	%div{class: "span6"}
+		%div{class:"new_white_box"}
+			%div{class: "small_logo"}
+				&beta;
+			%div{class: "white_box_words"}
+				Gain Recognition for Your Talent Acquisition
 	
 %div{class: "row", id: "below-fold-heading"}
 	%div{class: "span12"}

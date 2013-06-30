@@ -2,11 +2,70 @@
 	margin-bottom: 30px
 
 *
-	font-family: 'PT Serif', serif
 	font-size: 16px
 
 body
 	background: url('landing_below_fold_1.png') repeat
+
+#main_seal
+	width: 120px
+	height: 130px
+	background-color: #800000
+	text-align: center
+	border-radius: 0 0 70px 70px
+	box-shadow: 1px 1px 5px black
+	border:
+		left: 2px solid white
+		right: 2px solid white
+		bottom: 2px solid white
+	a
+		&:link, &:visited, &:hover, &:active 
+			text-decoration: none
+			color: white
+			font-family: Trajan Pro
+	div
+		padding: 5px
+	#main_seal_logo
+		a
+			&:link, &:visited, &:hover, &:active 
+				text-decoration: none
+				color: white
+				font-family: Trajan Pro
+				text-align: center
+				font-size: 60px
+				font-weight: 900
+				letter-spacing: -10px
+		margin-top: 15px
+		margin-left: -20px
+				
+.head_nav
+	text-align: center
+	height: 30px
+	padding: 5px
+	float: right
+	width: 120px
+	margin-right: 10px
+	background-color: #800000
+	text-align: center
+	border-radius: 0 0 60px 60px
+	box-shadow: 1px 1px 5px black
+	border:
+		left: 2px solid white
+		right: 2px solid white
+		bottom: 2px solid white
+	
+	a
+		top: 30px
+		font-size: 18px
+		&:link, &:visited, &:hover, &:active 
+			text-decoration: none
+			color: white
+		
+#vit_banner
+	background: url('vit_rough_draft.png')
+	height: 200px
+	margin-top: -30px
+	
 
 .brown_title_banner
 	border-radius: 10px
@@ -47,7 +106,74 @@ body
 			h2
 				font-size: 24px
 				font-weight: normal
+
+.new_brown_banner
+	border-radius: 20px
+	background: url('footer_background.png') repeat
+	color: white
+	div
+		padding:
+			top: 10px
+			bottom: 10px
+		h1
+			margin-top: 30px
+			font-size: 50px
+			font-weight: normal
+		h2
+			font-size: 24px
+			font-weight: normal
+		header 
+			h1
+				font-size: 50px
+				font-weight: normal
+			h2
+				font-size: 24px
+				font-weight: normal
 				
+#of_geekology
+	font-size: 50px
+	font-family: Trajan Pro
+
+.new_white_box
+	margin-left: 0px
+	margin-right: 10px
+	background-color:	#F5F0E6
+	padding: 10px
+	border-radius: 20px
+	height: 80px
+	
+.white_box_words
+	margin-top: 15px
+	font-size: 20px
+	line-height: 110%
+
+.small_logo
+	width: 60px
+	height: 45px
+	padding-top: 20px
+	background-color: #800000
+	text-align: center
+	border-radius: 0 0 40px 40px
+	box-shadow: 1px 1px 5px black
+	border: 2px solid white
+	font-family: Trajan Pro
+	color: white
+	font-size: 30px
+	float: left
+	margin:
+		right: 20px
+		left: 5px
+		top: 5px
+		bottom: 5px
+	
+	
+#learn_science_pic
+	padding: 5px
+	background-color:	#F5F0E6
+	border-radius: 60px
+	height: 100px
+	width: 100px
+
 .brown_box
 	border-radius: 10px
 	background: url('footer_background.png') repeat
@@ -61,22 +187,6 @@ body
 	h2
 		font-size: 20px
 		font-weight: normal
-
-.head_nav
-	text-align: center
-	height: 96px
-	padding: 10px
-	float: right
-	width: 90px
-	background: url('footer_background.png') 
-	margin-left: 10px
-	border-radius: 0 0 10px 10px
-	a
-		top: 30px
-		font-size: 18px
-		&:link
-		&:visited
-			color: white
 				
 #seal
 	height: 120px
@@ -90,17 +200,26 @@ body
 	border-radius: 10px
 
 #landing_page_above_fold_heading
-	border-radius: 10px
+	margin-top: -30px
+	border-radius: 0 0 20px 20px
 	background: url('footer_background.png') repeat
 	text-align: center
 	color: white
+	padding: 5px
 	div
-		header 
+		margin-left: 0px
+		div
+			padding: 5px
+		header
+			span
+				font-size: 85px
+				font-family: Trajan Pro
+				font-weight: 900
 			h1
-				font-size: 35px
+				font-size: 85px
 				font-weight: normal
 			h2
-				font-size: 24px
+				font-size: 30px
 				font-weight: normal
 						
 #what_is_geekology
@@ -165,7 +284,12 @@ body
 	margin-bottom: -20px
 
 #page_header
-	margin-bottom: 10px
+	position: fixed
+	width: 1040px
+	
+#spacer
+	height: 80px
+	background: url('footer_background.png') repeat
 
 #jobfully_logo
 	text-align: center

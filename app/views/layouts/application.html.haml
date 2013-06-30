@@ -11,5 +11,7 @@
 	%body
 		%div{class: "container"}
 			= render 'layouts/header'
+			%div{class: "row", id:"spacer"}
+				%div{class: "span12"}
 			= yield
 			= render 'layouts/footer'

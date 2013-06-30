@@ -1,3 +1,11 @@
+%div{class:"row", id: "sub_banner"}
+	%div{class: "span2"}
+		%div{id:"main_seal"}
+			%div{id:"main_seal_title"}
+				= link_to "School Of Geekology", root_url
+			%div{id:"main_seal_logo"}
+				= link_to "GK", root_url
+
 %div{class:"row", id: "vit_banner"}
 	%div{class: "span12"}
 
@@ -8,38 +16,31 @@
 				%div
 					%h2 Knowing People is an Art, Knowing Tech is a Science
 				%div
-					%h1 <span>Geekology</span> is both
+					%h1 <span>Geekology</span> Is Both
 				%div
-					%h2 Master Technical Recruiting without being a geek:
+					%h2 Master Technical Recruiting Without Being a Geek:
 	%div{class: "row"}
-		%div{class: "span6"}
+		%div{class: "span1"}
+		%div{class: "span5"}
 			%p{class: "btn btn-large"}
-				= link_to "3 Half Day Classes:", url_for(:controller => :pages, :action => :program), :class => 'text_button', :id => 'learn_more'
-		%div{class: "span6"}
+				= link_to "Technical Training Itensive: 3 Hour Bootcamp", url_for(:controller => :pages, :action => :program), :class => 'text_button', :id => 'learn_more'
+		%div{class: "span5"}
 			%p{class: "btn btn-large"}
-				= link_to "3 Hour Bootcamp:", url_for(:controller => :pages, :action => :program), :class => 'text_button', :id => 'learn_more'
+				= link_to "Technical Recruiting 101: 3 Half-Day Classes", url_for(:controller => :pages, :action => :program), :class => 'text_button', :id => 'learn_more'
 
 %div{class: "row"}
-	%div{class: "span4 social_proof"}
-		%div
-			%p
-				&ldquo;I was surprised how much better I understand technology [after this class].&rdquo;
+	%div{class: "span12"}
+		%div{class:"new_white_box", id:"quote-box"}
+			%div{class: "small_logo", id: "quote_shield"}
+				&ldquo; &rdquo;
+			%div{class: "white_box_words"}
+				&ldquo;I was surprised how much better I understand technology [after this class]&rdquo;
 				%br/
-				\- <em>Melissa Dela Cruz, DoubleDown Interactive</em>
-	%div{class: "span4 social_proof"}
-		%div
-			%p
-				&ldquo;10 out of 10. [This class] made me feel more confident about recruiting and talking to my engineering team.&rdquo;
-				%br/
-				\- <em>Laura Bott, NetMotion Wireless</em>
-	%div{class: "span4 social_proof"}
-		%div
-			%p
-				&ldquo;I got a lot from [the class] and enjoyed it. It was surprising how much I learned and how much more
-				prepared I feel to source and screen candidates.&rdquo;
-				%br/
-				\- <em>Abbie Samson, INRIX</em>
+				\- <em>Melissa Dela Cruz, DoubleDown Interactive</em> 
+				%p{class: "btn", id:"quote_learn_more"}
+					= link_to "More Testimonials", url_for(:controller => :pages, :action => :program), :class => 'text_button', :id => 'quote_learn_more'
 				
+								
 %div{class: "row new_brown_banner", id: "learn_the_science"}
 	%div{class: "span2"}
 		=image_tag('VITE-AEREA.png', id: 'learn_science_pic')

@@ -1,12 +1,10 @@
 %div{class: "row",id:"page_header"}
 	%div{class: "span2"}
-		%div{id:"main_seal"}
-			%div{id:"main_seal_title"}
-				= link_to "School Of Geekology", root_url
+		%div{id:"sub_seal"}
 			%div{id:"main_seal_logo"}
 				= link_to "GK", root_url
 		
 	%div{class: "span7 offset3", id: "nav-cluster"}
-		%div{class: "head_nav"}= link_to "Contact Us", url_for(:controller => :pages, :action => :contact)
+		%div{class: "head_nav"}= link_to "Contact", url_for(:controller => :pages, :action => :contact)
 		%div{class: "head_nav"}= link_to "Blog", "http://blog.geekology.biz"
 		%div{class: "head_nav"}= link_to "Classes", url_for(:controller => :pages, :action => :program)

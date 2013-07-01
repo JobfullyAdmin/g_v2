@@ -5,6 +5,10 @@
 				= link_to "School Of Geekology", root_url
 			%div{id:"main_seal_logo"}
 				= link_to "GK", root_url
+	%div{class: "span7 offset3", id: "nav-cluster"}
+		%div{class: "head_nav"}= link_to "Contact", url_for('/#contact_link')
+		%div{class: "head_nav"}= link_to "Blog", "http://blog.geekology.biz"
+		%div{class: "head_nav"}= link_to "Classes", url_for(:controller => :pages, :action => :program)
 
 %div{class:"row", id: "vit_banner"}
 	%div{class: "span12"}
@@ -23,10 +27,10 @@
 		%div{class: "span1"}
 		%div{class: "span5"}
 			%p{class: "btn btn-large"}
-				= link_to "Technical Training Itensive: 3 Hour Bootcamp", url_for(:controller => :pages, :action => :program), :class => 'text_button', :id => 'learn_more'
+				= link_to "Technical Training Itensive: 3 Hour Bootcamp", url_for(:controller => :pages, :action => :agency), :class => 'text_button', :id => 'learn_more'
 		%div{class: "span5"}
 			%p{class: "btn btn-large"}
-				= link_to "Technical Recruiting 101: 3 Half-Day Classes", url_for(:controller => :pages, :action => :program), :class => 'text_button', :id => 'learn_more'
+				= link_to "Technical Recruiting 101: 3 Half-Day Classes", url_for(:controller => :pages, :action => :companyhr), :class => 'text_button', :id => 'learn_more'
 
 %div{class: "row"}
 	%div{class: "span12"}
@@ -37,8 +41,8 @@
 				&ldquo;I was surprised how much better I understand technology [after this class]&rdquo;
 				%br/
 				\- <em>Melissa Dela Cruz, DoubleDown Interactive</em> 
-				%p{class: "btn", id:"quote_learn_more"}
-					= link_to "More Testimonials", url_for(:controller => :pages, :action => :program), :class => 'text_button', :id => 'quote_learn_more'
+				%p{class: "btn", id:"quote_learn_more"}	
+					= link_to "More Testimonials", url_for("#"), :class => 'text_button', :id => 'quote_learn_more'
 				
 								
 %div{class: "row new_brown_banner", id: "learn_the_science"}
@@ -110,38 +114,232 @@
 				&beta;
 			%div{class: "white_box_words"}
 				Gain Recognition for Your Talent Acquisition
-	
-%div{class: "row", id: "below-fold-heading"}
-	%div{class: "span12"}
-		%header
-			%hgroup
-				%h1 Technical Knowledge: a core skill for technical recruiting
-				%h2 And, it&rsquo;s possible for non-programmers to have this knowledge
-		
-%div{class: "row", id: "after_conditions"}
-	%div{class: "span4"}
-		%h3 What can our training do for you?
+				
+
+%div{class: "row new_brown_banner", id: "what_makes_different"}
+	%div{class: "span2"}
+		=image_tag('Vitruvian.png', id: 'learn_science_pic')
+	%div{class: "span10"}
+		%h1
+			What Makes <span>Geekology</span> Different:
+
+%div{class: "row"}
+	%div{class: "span6"}
+		%div{class:"new_white_box"}
+			%div{class: "small_logo"}
+				&eta;
+			%div{class: "white_box_words"}
+				Specifically Designed For Recruiting Technical Talent
+	%div{class: "span6"}
+		%div{class:"new_white_box"}
+			%div{class: "small_logo"}
+				&theta;
+			%div{class: "white_box_words"}
+				Combination of Software Knowledge and Recruiting Expertise
+			
+%div{class: "row"}
+	%div{class: "span6"}
+		%div{class:"new_white_box"}
+			%div{class: "small_logo"}
+				&lambda;
+			%div{class: "white_box_words"}
+				Learn Only What's Necessary
+	%div{class: "span6"}
+		%div{class:"new_white_box"}
+			%div{class: "small_logo"}
+				&omega;
+			%div{class: "white_box_words"}
+				Everything is Easy to Understand
+				
+%div{class: "row new_brown_banner", id: "choose_your_house"}
+	%div{class: "span2"}
+		%div{id:"three_house"}
+			%div{id:"three_shield"}
+				GK
 	%div{class: "span8"}
-		%ul
-			%li Have Intelligent conversations with technical people
-			%li Make smart candiate selections and confident decisions
-			%li Identify high potential candidates that might have been missed
-			%li Gain recognition for your talent acquisition contribution
-
-%div{class: "row", id: "pain_point_question"}
-	%div{class: "span12"}
-		%h1 So, why don&rsquo;t most recruiters have enough technical knowledge?
-
-%div{class: "row", id: "landing_call_to_action"}
+		%h1
+			Choose Your House:
+	%div{class: "span2"}
+				
+%div{class: "row"}
+	%div{class: "span4"}
+		%div{class: "house_white_box"}
+			%div{class:"house_seal"}
+				%h1
+					Renaissance
+				=image_tag('VITE-AEREA.png', id: 'learn_science_pic')
+				%h2
+					Technical Training Intensive
+				%p
+					3 Hour Bootcamp
+				%br/
+				%p{class: "btn", id:"quote_learn_more"}
+					%a
+						Show Overview
+				%br/
+				%p{class: "btn", id:"quote_learn_more"}
+					= link_to "Sign Up", url_for(:controller => :pages, :action => :agency), :class => 'text_button', :id => 'quote_learn_more'
+	%div{class: "span4"}
+		%div{class: "house_white_box"}
+			%div{class:"house_seal"}
+				%h1
+					Vitruvian
+				=image_tag('Vitruvian.png', id: 'learn_science_pic')
+				%h2
+					Technical Recruiting 101
+				%p
+					3 Half-Day Classes
+				%br/
+				%p{class: "btn", id:"quote_learn_more"}
+					%a
+						Show Overview
+				%br/
+				%p{class: "btn", id:"quote_learn_more"}
+					= link_to "Sign Up", url_for(:controller => :pages, :action => :companyhr), :class => 'text_button', :id => 'quote_learn_more'
+	%div{class: "span4"}
+		%div{class: "house_white_box"}
+			%div{class:"house_seal"}
+				%h1
+					DaVinci
+				=image_tag('joconde.png', id: 'learn_science_pic')
+				%h2
+					Technical Training Premium
+				%p
+					Custom Designed Programs
+				%br/
+				%p{class: "btn", id:"quote_learn_more"}
+					%a
+						Show Overview
+				%br/
+				%p{class: "btn", id:"quote_learn_more"}
+					= link_to "Sign Up", url_for(:controller => :pages, :action => :program), :class => 'text_button', :id => 'quote_learn_more'
+%div{class:"row"}
+	%div{class:"span12 description_white_box"}
+		%div
+			%h1
+				Renaissance
+			%h2
+				Technical Training Intensive: 3 Hour Bootcamp
+			%h4
+				For Agency recruiters who want to differentiate themselves and stay ahead of the crowd
+			%br
+			%ul
+				%li
+					Maintain better client communication because you ”get it“ when you have an overall understanding of how software is made
+				%br
+				%li
+					Make confident candidate selections because you develop insights when you know how different roles function and interact
+				%br
+				%li
+					Build stronger relationships with tech community because you speak their language intelligently when you truly understand the tools of their trade
+			%p{class: "btn btn-large", id:"quote_learn_more"}
+				= link_to "View Details, Times and Sign Up", url_for(:controller => :pages, :action => :agency), :class => 'text_button', :id => 'quote_learn_more'
+			<br></br>
+			
+%div{class: "row new_brown_banner", id: "meet_the_instructor"}
+	%div{class: "span2"}
+		%div{id:'learn_science_pic'}
+			%div{id: "linked"}
+				= link_to image_tag('linkedin_logo.png'), "http://www.linkedin.com/in/meiiam/"
+	%div{class: "span10"}
+		%h1
+			Meet The Instructor - Mei Lu
+			
+%div{class: "row"}
 	%div{class: "span6"}
-		%p
-			Knowing what technical knowledge is <strong>needed</strong> 
-			and <strong>not needed</strong> for
-			technical recruiting requires insights and experience from
-			someone who is <strong>technical</strong> and
-			<strong>understands recruiting</strong>
+		%div{class:"bio_white_box"}
+			%div{class: "small_logo"}
+				&Pi;
+			%div{class: "bio_box_words"}
+				Mei started her career as a software engineer, building software at Qpass, M.I.T, and MicroStrategy.She received her Master’s Degree in Computer Science from University of Pennsylvania and her Master’s Degree in Engineering from Carnegie Mellon University.
 	%div{class: "span6"}
-		%p
-			You can learn the geek language in an easy-to-understand manner
-		%p{class: "btn large primary"}
-			= link_to "Find out how", url_for(:controller => :pages, :action => :program), :id => 'landing_page_cta'
+		%div{class:"bio_white_box"}
+			%div{class: "small_logo"}
+				&pi;
+			%div{class: "bio_box_words"}
+				Mei Lu is the Founder and CEO of Jobfully.com, an online software start-up focusing on technology job market. Before starting Jobfully, Mei recruited top talent for Silicon Valley technology companies, including OpenTable, OutSpark, RockYou and TubeMogul.
+
+%div{class: "row new_brown_banner", id: "choose_your_house"}
+	%div{class: "span2"}
+		%div{id:"three_house"}
+			%div{id:"three_shield"}
+				?
+	%div{class: "span8"}
+		%h1
+			FAQ:
+	%div{class: "span2"}
+
+%div{class:"row"}
+	%div{class:"span12"}
+		%div{class: "basic_white_box", id: "faq_box"}
+			%h1 What is a Geek?
+			%h2 /gēk/ - A person with an eccentric devotion to scientific or technical pursuits
+			%br
+			%h1 Do you need to be a geek to master technical recruiting?
+			%h2 No, Geekology's goal is to make understanidng geeks simple
+			%br
+			%h1 What exactly is Geekology?
+			%h2 New technical recruiting training programs that give you everything you need to know about technology, engineering teams, and technical talent in plain English
+			%br
+			%h1 How important is technical knowledge?
+			%h2 Very, it's a core skill for technical recruiting but it’s possible for non-programmers to have this knowledge
+			%br
+			%h1 What can your training do for me?
+			%h2
+				You can achive these results:
+				%ul
+					%li Have Intelligent conversations with technical people
+					%li Make smart candiate selections and confident decisions
+					%li Identify high potential candidates that might have been missed
+					%li Gain recognition for your talent acquisition contribution
+			%br
+			%h1 Why don’t most recruiters have enough technical knowledge?
+			%h2 Knowing what technical knowledge is needed and not needed for technical recruiting requires insights and experience from someone who is technical and understands recruiting
+			%br
+			%h1 I'm doing alright with Technical Recruiting, Why should I take this class now?
+			%h2
+				%ul
+					%li Change from passive and reactive to proactive recruiting
+					%li Become a true partner of your engineering organization
+					%li Go beyond keyword matching
+					%li Increase both quality and quantity of candidates
+					%li Your developer friends aren’t always good at teaching and explaining
+					%li You can’t really learn technology from Google or Wikipedia
+			%br
+			%h1 Why DaVinci?
+			%h2 He was a master of both art and science, much like the best technical recruiters
+			%br
+			
+%div{class: "row new_brown_banner", id: "choose_your_house"}
+	%div{class: "span2"}
+		%div{id:"three_house"}
+			%div{id:"three_shield"}
+				?
+	%div{class: "span8"}
+		%h1
+			Contact:
+	%div{class: "span2"}
+	
+%div{class:"row", id: "contact_link"}
+	%div{class:"span12"}
+		%div{class: "basic_white_box", id: "faq_box"}
+			%h1 Questions and Support
+			%h2 Email is a great to get in touch. Drop us a line at geekology@jobfully.com
+			%h2 You can also reach us at 425.247.0999
+			%br
+			%h1 Mailing Address
+			%h2 Snail mail is so quaint. Send us something at:
+			%h2 Geekology (a Jobfully company)<br>15127 NE 24th St., #575<br>Redmond, Wa 98052
+			%br
+			%h1 Media Inquiries
+			%h2 We'd be glad to provide expert insights into all aspect of technical recruiting, including:
+			%h2
+				%ul
+					%li Sourcing technical roles
+					%li Attracting technical talent
+					%li Career development for software professionals
+					%li Candidate experience
+					%li Compensation package for geeks
+					%li and more...
+
+			

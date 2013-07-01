@@ -14,3 +14,30 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+
+$(document).ready(function(){
+	$('#java_vitruvian_button').on('click',function(){
+		$('#java_renaissance_description').hide();
+		$('#java_davinci_description').hide();
+		$('#java_vitruvian_description').fadeIn('slow');
+		$('#java_vitruvian_button').text('Showing')
+		$('#java_renaissance_button').text('Show Overview')
+		$('#java_davinci_button').text('Show Overview')
+	});
+	$('#java_renaissance_button').on('click',function(){
+		$('#java_vitruvian_description').hide();
+		$('#java_davinci_description').hide();
+		$('#java_renaissance_description').fadeIn('slow');
+		$('#java_vitruvian_button').text('Show Overview')
+		$('#java_renaissance_button').text('Showing')
+		$('#java_davinci_button').text('Show Overview')
+	});
+	$('#java_davinci_button').on('click',function(){
+		$('#java_vitruvian_description').hide();
+		$('#java_renaissance_description').hide();
+		$('#java_davinci_description').fadeIn('slow');
+		$('#java_vitruvian_button').text('Show Overview')
+		$('#java_renaissance_button').text('Show Overview')
+		$('#java_davinci_button').text('Showing')
+	});
+});

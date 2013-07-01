@@ -174,8 +174,8 @@
 					3 Hour Bootcamp
 				%br/
 				%p{class: "btn", id:"quote_learn_more"}
-					%a
-						Show Overview
+					%a{id:"java_renaissance_button"}
+						Showing
 				%br/
 				%p{class: "btn", id:"quote_learn_more"}
 					= link_to "Sign Up", url_for(:controller => :pages, :action => :agency), :class => 'text_button', :id => 'quote_learn_more'
@@ -191,7 +191,7 @@
 					3 Half-Day Classes
 				%br/
 				%p{class: "btn", id:"quote_learn_more"}
-					%a
+					%a{id:"java_vitruvian_button"}
 						Show Overview
 				%br/
 				%p{class: "btn", id:"quote_learn_more"}
@@ -208,12 +208,13 @@
 					Custom Designed Programs
 				%br/
 				%p{class: "btn", id:"quote_learn_more"}
-					%a
+					%a{id:"java_davinci_button"}
 						Show Overview
 				%br/
 				%p{class: "btn", id:"quote_learn_more"}
 					= link_to "Sign Up", url_for(:controller => :pages, :action => :program), :class => 'text_button', :id => 'quote_learn_more'
-%div{class:"row"}
+					
+%div{class:"row", id:"java_renaissance_description"}
 	%div{class:"span12 description_white_box"}
 		%div
 			%h1
@@ -236,6 +237,52 @@
 				= link_to "View Details, Times and Sign Up", url_for(:controller => :pages, :action => :agency), :class => 'text_button', :id => 'quote_learn_more'
 			<br></br>
 			
+%div{class:"row", id:"java_vitruvian_description"}
+	%div{class:"span12 description_white_box"}
+		%div
+			%h1
+				Vitruvian
+			%h2
+				Technical Recruiting 101: 3 Half-Day Classes
+			%h4
+				For Company HR/recruiting professionals who need to fill technical positions
+			%br
+			%ul
+				%li
+					Become a partner of engineering because you play a key role in talent strategy when you understand how your engineering team works and its talent needs
+				%br
+				%li
+					Help hiring managers because you reduce their recruiting work load when you learn and apply their candidate selection principles
+				%br
+				%li
+					Create business impact because you scout the right talent to drive company growth when you know how to spot and find top technical candidates
+			%p{class: "btn btn-large", id:"quote_learn_more"}
+				= link_to "View Details, Times and Sign Up", url_for(:controller => :pages, :action => :companyhr), :class => 'text_button', :id => 'quote_learn_more'
+			<br></br>		
+			
+%div{class:"row", id:"java_davinci_description"}
+	%div{class:"span12 description_white_box"}
+		%div
+			%h1
+				DaVinici
+			%h2
+				Technical Recruiting Premium: Custom Designed Programs
+			%h4
+				For Corporate recruiting teams that need customized training solutions
+			%br
+			%ul
+				%li
+					Customized solutions to increase technical recruiting competency level based on your team’s unique needs and job market situation
+				%br
+				%li
+					Empower your recruiting team to drive critical business results by meeting talent growth targets
+				%br
+				%li
+				Hard skill development for recruiting staff pays off in the form of better talent acquisition results, recruiter performance and retention
+			%p{class: "btn btn-large", id:"quote_learn_more"}
+				= link_to "View Details, Times and Sign Up", url_for(:controller => :pages, :action => :program), :class => 'text_button', :id => 'quote_learn_more'
+			<br></br>				
+
 %div{class: "row new_brown_banner", id: "meet_the_instructor"}
 	%div{class: "span2"}
 		%div{id:'learn_science_pic'}

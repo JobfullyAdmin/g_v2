@@ -1,18 +1,3 @@
-%div{class:"row", id: "sub_banner"}
-	%div{class: "span2"}
-		%div{id:"main_seal"}
-			%div{id:"main_seal_title"}
-				= link_to "School Of Geekology", root_url
-			%div{id:"main_seal_logo"}
-				= link_to "GK", root_url
-	%div{class: "span7 offset3", id: "nav-cluster"}
-		%div{class: "head_nav"}= link_to "Contact", url_for('/#contact_link')
-		%div{class: "head_nav"}= link_to "Blog", "http://blog.geekology.biz"
-		%div{class: "head_nav"}= link_to "Classes", url_for(:controller => :pages, :action => :program)
-
-%div{class:"row", id: "vit_banner"}
-	%div{class: "span12"}
-
 %div{class: "row",id: "landing_page_above_fold_heading"}
 	%div{class: "span12"}
 		%header
@@ -22,7 +7,7 @@
 				%div
 					%h1 <span>Geekology</span> Is Both
 				%div
-					%h2 Master Technical Recruiting Without Being a Geek:
+					%h2 Easy To Understand Training For Technical Recruiting:
 	%div{class: "row"}
 		%div{class: "span1"}
 		%div{class: "span5"}
@@ -33,93 +18,144 @@
 				= link_to "Technical Recruiting 101: 3 Half-Day Classes", url_for(:controller => :pages, :action => :companyhr), :class => 'text_button', :id => 'learn_more'
 
 %div{class: "row"}
+	%div{class: "span4"}
+		%div{class:"step_white_box", id: 'java_step_1_div'}
+			%div{class: "step_small_logo"}
+				&Alpha;
+			%div{class: "white_box_words"}
+				%h1 Learn The Science Of Geeks
+		%div{id:'java_step_drop_down_1'}
+			%div
+				%div{class: 'dropdown_white_box'}
+					Understand the Software Development Cycle
+					%br
+					%br
+					Decode Technical Job Descriptions and Resumes
+					%br
+					%br
+					Learn the Tools They Use and the Launguage They Speak
+					%br
+					%br
+					Learn How to React to New Technical	 Terms	
+	%div{class: "span4"}
+		%div{class:"step_white_box", id: 'java_step_2_div'}
+			%div{class: "step_small_logo"}
+				&Sigma;
+			%div{class: "white_box_words"}
+				%h1 Learn The Art Of Technical Recruiting
+		%div{id: 'java_step_drop_down_2'}
+			%div
+				%div{class: 'dropdown_white_box'}
+					Have Intellegent Conversations With Technical People
+					%br
+					%br
+					Make Smart Candidate Selections and Confident Decisions
+					%br
+					%br
+					Identify High Potential Candidates That Might Have Been Missed
+					%br
+					%br
+					Gain Recognition for Your Talent Acquisition
+	%div{class: "span4"}
+		%div{class:"step_white_box", id: 'java_step_3_div'}
+			%div{class: "step_small_logo"}
+				&Omega;
+			%div{class: "white_box_words"}
+				%h1 Master Technical Recruiting
+		%div{id: 'java_step_drop_down_3'}
+			%div
+				%div{class: 'dropdown_white_box'}
+					Change from passive and reactive to proactive recruiting
+					%br
+					%br
+					Become a true partner of your engineering organization
+					%br
+					%br
+					Go beyond keyword matching
+					%br
+					%br
+					Increase both quality and quantity of candidates
+	
+%div{class: "row", id: 'java_quote_1'}
 	%div{class: "span12"}
 		%div{class:"new_white_box", id:"quote-box"}
 			%div{class: "small_logo", id: "quote_shield"}
 				&ldquo; &rdquo;
 			%div{class: "white_box_words"}
-				&ldquo;I was surprised how much better I understand technology [after this class]&rdquo;
-				%br/
+				&ldquo;I got a lot from [the class] and enjoyed it. It was surprising how much I learned and how much more prepared I feel to source and screen candidates.&rdquo;
+				\- <em>Abbie Samson, INRIX</em> 
+			
+%div{class: "row", id: 'java_quote_2'}
+	%div{class: "span12"}
+		%div{class:"new_white_box", id:"quote-box"}
+			%div{class: "small_logo", id: "quote_shield"}
+				&ldquo; &rdquo;
+			%div{class: "white_box_words"}
+				&ldquo;I was surprised how much better I understand technology [after this class]&rdquo; 
+				%br
 				\- <em>Melissa Dela Cruz, DoubleDown Interactive</em> 
-				%p{class: "btn", id:"quote_learn_more"}	
-					= link_to "More Testimonials", url_for("#"), :class => 'text_button', :id => 'quote_learn_more'
+			
+%div{class: "row", id: 'java_quote_3'}
+	%div{class: "span12"}
+		%div{class:"new_white_box", id:"quote-box"}
+			%div{class: "small_logo", id: "quote_shield"}
+				&ldquo; &rdquo;
+			%div{class: "white_box_words"}
+				&ldquo;10 out of 10. [This class] made me feel more confident about recruiting and talking to my engineering team.&rdquo; 
+				\- <em>Laura Bott, NetMotion Wireless</em> 
 				
-								
-%div{class: "row new_brown_banner", id: "learn_the_science"}
-	%div{class: "span2"}
-		=image_tag('VITE-AEREA.png', id: 'learn_science_pic')
-	%div{class: "span10"}
-		%h1
-			Learn the Science of Geeks:
-			
-%div{class: "row"}
-	%div{class: "span6"}
-		%div{class:"new_white_box"}
-			%div{class: "small_logo"}
-				&Delta;
-			%div{class: "white_box_words"}
-				Understand the Software Development Cycle
-	%div{class: "span6"}
-		%div{class:"new_white_box"}
-			%div{class: "small_logo"}
-				&Sigma;
-			%div{class: "white_box_words"}
-				Decode Technical Job Descriptions and Resumes
-			
-%div{class: "row"}
-	%div{class: "span6"}
-		%div{class:"new_white_box"}
-			%div{class: "small_logo"}
-				&Pi;
-			%div{class: "white_box_words"}
-				Learn the Tools They Use and the Launguage They Speak
-	%div{class: "span6"}
-		%div{class:"new_white_box"}
-			%div{class: "small_logo"}
-				&Omega;
-			%div{class: "white_box_words"}
-				Learn How to React to New Technical Terms
+%div{class:"row"}
+	%div{class:"span4", id: 'java_quote_1_div'}
+		%div{class:"company_white_box"}
+			=image_tag('logo_inrixblack.png', class: 'company_logo', id: 'inrix')
+	%div{class:"span4"}
+		%div{class:"company_white_box", id: 'java_quote_2_div'}
+			=image_tag('doubledownlogoblack.png', class: 'company_logo', id: 'doubledown')
+	%div{class:"span4"}
+		%div{class:"company_white_box", id: 'java_quote_3_div'}
+			=image_tag('netmotionlogoblack.png', class: 'company_logo', id:'netmotion')
 
-%div{class: "row new_brown_banner", id: "learn_the_art"}
+%div{class: "row new_brown_banner", id: "problem_brown_banner"}
 	%div{class: "span2"}
-		=image_tag('joconde.png', id: 'learn_science_pic')
-	%div{class: "span10"}
+		=image_tag('Vitruvian.png', id: 'learn_science_pic')
+	%div{class: "span8"}
 		%h1
-			Learn the Art of <span id="of_geekology">Geekology</span>:
-			
-%div{class: "row"}
-	%div{class: "span6"}
-		%div{class:"new_white_box"}
-			%div{class: "small_logo"}
-				&alpha;
-			%div{class: "white_box_words"}
-				Have Intellegent Conversations With Technical People
-	%div{class: "span6"}
-		%div{class:"new_white_box"}
-			%div{class: "small_logo"}
-				&xi;
-			%div{class: "white_box_words"}
-				Make Smart Candidate Selections and Confident Decisions
+			You Need to Recruit	Technical Talent But You're Not a Geek:
+		%h2
+			Geekology Is Here to Help, and Quick
+	%div{class: 'span2'}
 
 %div{class: "row"}
 	%div{class: "span6"}
 		%div{class:"new_white_box"}
 			%div{class: "small_logo"}
-				&delta;
+				&eta;
 			%div{class: "white_box_words"}
-				Identify High Potential Candidates That Might Have Been Missed
+				New technical recruiting training programs
 	%div{class: "span6"}
 		%div{class:"new_white_box"}
 			%div{class: "small_logo"}
-				&beta;
+				&theta;
 			%div{class: "white_box_words"}
-				Gain Recognition for Your Talent Acquisition
+				Presentations and interactive workshops
+%div{class: "row"}
+	%div{class: "span6"}
+		%div{class:"new_white_box"}
+			%div{class: "small_logo"}
+				&lambda;
+			%div{class: "white_box_words"}
+				Learn about technology, engineering teams, and technical talent
+	%div{class: "span6"}
+		%div{class:"new_white_box"}
+			%div{class: "small_logo"}
+				&omega;
+			%div{class: "white_box_words"}
+				Small Class Sizes, In Person Or Online
 				
-
 %div{class: "row new_brown_banner", id: "what_makes_different"}
 	%div{class: "span2"}
 		=image_tag('Vitruvian.png', id: 'learn_science_pic')
-	%div{class: "span10"}
+	%div{class: "span8"}
 		%h1
 			What Makes <span>Geekology</span> Different:
 
@@ -136,7 +172,7 @@
 				&theta;
 			%div{class: "white_box_words"}
 				Combination of Software Knowledge and Recruiting Expertise
-			
+
 %div{class: "row"}
 	%div{class: "span6"}
 		%div{class:"new_white_box"}
@@ -150,6 +186,22 @@
 				&omega;
 			%div{class: "white_box_words"}
 				Everything is Easy to Understand
+
+%div{class:'row'}
+	%div{class: 'span4'}
+		%div{class: "basic_white_box"}
+			Mei started her career as a software engineer, building software at Qpass, M.I.T, and MicroStrategy.She received her Master’s Degree in Computer Science from University of Pennsylvania and her Master’s Degree in Engineering from Carnegie Mellon University.
+	%div{class: 'span4'}
+		%div{class: 'new_basic_white_box'}
+			%h2
+				Meet The Instructor
+			=image_tag('mei_lu.jpeg', id: 'mei_pic')
+			%h2 
+				Mei Lu
+				= link_to image_tag('linkedin_logo.png'), "http://www.linkedin.com/in/meiiam/"
+	%div{class: 'span4'}
+		%div{class: "basic_white_box"}
+			Mei Lu is the Founder and CEO of Jobfully.com, an online software start-up focusing on technology job market. Before starting Jobfully, Mei recruited top talent for Silicon Valley technology companies, including OpenTable, OutSpark, RockYou and TubeMogul.
 				
 %div{class: "row new_brown_banner", id: "choose_your_house"}
 	%div{class: "span2"}
@@ -212,7 +264,7 @@
 						Show Overview
 				%br/
 				%p{class: "btn", id:"quote_learn_more"}
-					= link_to "Sign Up", url_for(:controller => :pages, :action => :program), :class => 'text_button', :id => 'quote_learn_more'
+					Call Us
 					
 %div{class:"row", id:"java_renaissance_description"}
 	%div{class:"span12 description_white_box"}
@@ -234,7 +286,7 @@
 				%li
 					Build stronger relationships with tech community because you speak their language intelligently when you truly understand the tools of their trade
 			%p{class: "btn btn-large", id:"quote_learn_more"}
-				= link_to "View Details, Times and Sign Up", url_for(:controller => :pages, :action => :agency), :class => 'text_button', :id => 'quote_learn_more'
+				= link_to "View Details, Times and Sign Up", url_for(:controller => :pages, :action => :companyhr), :class => 'text_button', :id => 'quote_learn_more'
 			<br></br>
 			
 %div{class:"row", id:"java_vitruvian_description"}
@@ -280,33 +332,80 @@
 				%li
 				Hard skill development for recruiting staff pays off in the form of better talent acquisition results, recruiter performance and retention
 			%p{class: "btn btn-large", id:"quote_learn_more"}
-				= link_to "View Details, Times and Sign Up", url_for(:controller => :pages, :action => :program), :class => 'text_button', :id => 'quote_learn_more'
-			<br></br>				
-
-%div{class: "row new_brown_banner", id: "meet_the_instructor"}
-	%div{class: "span2"}
-		%div{id:'learn_science_pic'}
-			%div{id: "linked"}
-				= link_to image_tag('linkedin_logo.png'), "http://www.linkedin.com/in/meiiam/"
-	%div{class: "span10"}
-		%h1
-			Meet The Instructor - Mei Lu
+				Call us at 425-247-0999
+			<br></br>
 			
+%div{class: "row new_brown_banner", id: "learn_the_science"}
+	%div{class: "span2"}
+		=image_tag('VITE-AEREA.png', id: 'learn_science_pic')
+	%div{class: "span8"}
+		%h1
+			Learn the Science of Geeks:
+	
 %div{class: "row"}
 	%div{class: "span6"}
-		%div{class:"bio_white_box"}
+		%div{class:"new_white_box"}
+			%div{class: "small_logo"}
+				&Delta;
+			%div{class: "white_box_words"}
+				Understand the Software Development Cycle
+	%div{class: "span6"}
+		%div{class:"new_white_box"}
+			%div{class: "small_logo"}
+				&Sigma;
+			%div{class: "white_box_words"}
+				Decode Technical Job Descriptions and Resumes
+
+%div{class: "row"}
+	%div{class: "span6"}
+		%div{class:"new_white_box"}
 			%div{class: "small_logo"}
 				&Pi;
-			%div{class: "bio_box_words"}
-				Mei started her career as a software engineer, building software at Qpass, M.I.T, and MicroStrategy.She received her Master’s Degree in Computer Science from University of Pennsylvania and her Master’s Degree in Engineering from Carnegie Mellon University.
+			%div{class: "white_box_words"}
+				Learn the Tools They Use and the Launguage They Speak
 	%div{class: "span6"}
-		%div{class:"bio_white_box"}
+		%div{class:"new_white_box"}
 			%div{class: "small_logo"}
-				&pi;
-			%div{class: "bio_box_words"}
-				Mei Lu is the Founder and CEO of Jobfully.com, an online software start-up focusing on technology job market. Before starting Jobfully, Mei recruited top talent for Silicon Valley technology companies, including OpenTable, OutSpark, RockYou and TubeMogul.
+				&Omega;
+			%div{class: "white_box_words"}
+				Learn How to React to New Technical Terms
 
-%div{class: "row new_brown_banner", id: "choose_your_house"}
+%div{class: "row new_brown_banner", id: "learn_the_art"}
+	%div{class: "span2"}
+		=image_tag('joconde.png', id: 'learn_science_pic')
+	%div{class: "span8"}
+		%h1
+			Learn the Art of <span id="of_geekology">Geekology</span>:
+
+%div{class: "row"}
+	%div{class: "span6"}
+		%div{class:"new_white_box"}
+			%div{class: "small_logo"}
+				&alpha;
+			%div{class: "white_box_words"}
+				Have Intellegent Conversations With Technical People
+	%div{class: "span6"}
+		%div{class:"new_white_box"}
+			%div{class: "small_logo"}
+				&xi;
+			%div{class: "white_box_words"}
+				Make Smart Candidate Selections and Confident Decisions
+
+%div{class: "row"}
+	%div{class: "span6"}
+		%div{class:"new_white_box"}
+			%div{class: "small_logo"}
+				&delta;
+			%div{class: "white_box_words"}
+				Identify High Potential Candidates That Might Have Been Missed
+	%div{class: "span6"}
+		%div{class:"new_white_box"}
+			%div{class: "small_logo"}
+				&beta;
+			%div{class: "white_box_words"}
+				Gain Recognition for Your Talent Acquisition
+			
+%div{class: "row new_brown_banner"}
 	%div{class: "span2"}
 		%div{id:"three_house"}
 			%div{id:"three_shield"}
@@ -357,7 +456,7 @@
 			%h2 He was a master of both art and science, much like the best technical recruiters
 			%br
 			
-%div{class: "row new_brown_banner", id: "choose_your_house"}
+%div{class: "row new_brown_banner"}
 	%div{class: "span2"}
 		%div{id:"three_house"}
 			%div{id:"three_shield"}

@@ -40,4 +40,43 @@ $(document).ready(function(){
 		$('#java_renaissance_button').text('Show Overview')
 		$('#java_davinci_button').text('Showing')
 	});
+	$('#java_quote_1_div').on('mouseenter',function(){
+		$('#java_quote_2').hide();
+		$('#java_quote_3').hide();
+		$('#java_quote_1').fadeIn('slow');
+	});
+	$('#java_quote_2_div').on('mouseenter',function(){
+		$('#java_quote_1').hide();
+		$('#java_quote_3').hide();
+		$('#java_quote_2').fadeIn('slow');
+	});
+	$('#java_quote_3_div').on('mouseenter',function(){
+		$('#java_quote_1').hide();
+		$('#java_quote_2').hide();
+		$('#java_quote_3').fadeIn('slow');
+	});
+	$("#java_step_1_div").hover(
+	    function() {
+	        $("#java_step_drop_down_1").slideToggle("fast");
+	    },
+	    function() {
+	        $("#java_step_drop_down_1").slideToggle("fast");
+	    }
+	);
+	$("#java_step_2_div").hover(
+	    function() {
+	        $("#java_step_drop_down_2").slideToggle("fast");
+	    },
+	    function() {
+	        $("#java_step_drop_down_2").slideToggle("fast");
+	    }
+	);
+	$("#java_step_3_div").hover(
+	    function() {
+	        $("#java_step_drop_down_3").slideToggle("fast");
+	    },
+	    function() {
+	        $("#java_step_drop_down_3").slideToggle("fast");
+	    }
+	);
 });

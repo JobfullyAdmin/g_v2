@@ -79,4 +79,52 @@ $(document).ready(function(){
 	        $("#java_step_drop_down_3").slideToggle("fast");
 	    }
 	);
+	$("#java_step_4_div").hover(
+	    function() {
+	        $("#java_step_drop_down_4").slideToggle("fast");
+	    },
+	    function() {
+	        $("#java_step_drop_down_4").slideToggle("fast");
+	    }
+	);
+	$("#java_step_5_div").hover(
+	    function() {
+	        $("#java_step_drop_down_5").slideToggle("fast");
+	    },
+	    function() {
+	        $("#java_step_drop_down_5").slideToggle("fast");
+	    }
+	);
+	$("#java_step_6_div").hover(
+	    function() {
+	        $("#java_step_drop_down_6").slideToggle("fast");
+	    },
+	    function() {
+	        $("#java_step_drop_down_6").slideToggle("fast");
+	    }
+	);
+	$("#java_step_7_div").hover(
+	    function() {
+	        $("#java_step_drop_down_7").slideToggle("fast");
+	    },
+	    function() {
+	        $("#java_step_drop_down_7").slideToggle("fast");
+	    }
+	);
+	$("#java_step_8_div").hover(
+	    function() {
+	        $("#java_step_drop_down_8").slideToggle("fast");
+	    },
+	    function() {
+	        $("#java_step_drop_down_8").slideToggle("fast");
+	    }
+	);
+	$("#java_step_9_div").hover(
+	    function() {
+	        $("#java_step_drop_down_9").slideToggle("fast");
+	    },
+	    function() {
+	        $("#java_step_drop_down_9").slideToggle("fast");
+	    }
+	);
 });

@@ -24,6 +24,7 @@
 				&Alpha;
 			%div{class: "white_box_words"}
 				%h1 Learn The Science Of Geeks
+			%div{class: "triangle_down"}
 		%div{id:'java_step_drop_down_1'}
 			%div
 				%div{class: 'dropdown_white_box'}
@@ -43,6 +44,7 @@
 				&Sigma;
 			%div{class: "white_box_words"}
 				%h1 Learn The Art Of Technical Recruiting
+			%div{class: "triangle_down"}	
 		%div{id: 'java_step_drop_down_2'}
 			%div
 				%div{class: 'dropdown_white_box'}
@@ -62,6 +64,7 @@
 				&Omega;
 			%div{class: "white_box_words"}
 				%h1 Master Technical Recruiting
+			%div{class: "triangle_down"}
 		%div{id: 'java_step_drop_down_3'}
 			%div
 				%div{class: 'dropdown_white_box'}
@@ -107,12 +110,15 @@
 %div{class:"row"}
 	%div{class:"span4", id: 'java_quote_1_div'}
 		%div{class:"company_white_box"}
+			%div{class: "triangle_up"}
 			=image_tag('logo_inrixblack.png', class: 'company_logo', id: 'inrix')
 	%div{class:"span4"}
 		%div{class:"company_white_box", id: 'java_quote_2_div'}
+			%div{class: "triangle_up"}
 			=image_tag('doubledownlogoblack.png', class: 'company_logo', id: 'doubledown')
 	%div{class:"span4"}
 		%div{class:"company_white_box", id: 'java_quote_3_div'}
+			%div{class: "triangle_up"}
 			=image_tag('netmotionlogoblack.png', class: 'company_logo', id:'netmotion')
 
 %div{class: "row new_brown_banner", id: "problem_brown_banner"}
@@ -132,6 +138,7 @@
 				&delta;
 			%div
 				%h2 New technical recruiting training programs, You don’t need to be a geek to master technical recruiting
+			%div{class: "triangle_down"}
 		%div{id:'java_step_drop_down_4'}
 			%div
 				%div{class: 'dropdown_white_box'}
@@ -148,6 +155,7 @@
 				&epsilon;
 			%div
 				%h2 Learn about technology, engineering teams, and technical talent, all in plain English
+			%div{class: "triangle_down"}
 		%div{id: 'java_step_drop_down_5'}
 			%div
 				%div{class: 'dropdown_white_box'}
@@ -164,6 +172,7 @@
 				&zeta;
 			%div
 				%h2 Small class sizes: online or in-person, get all your questions answered personally by an expert
+			%div{class: "triangle_down"}
 		%div{id: 'java_step_drop_down_6'}
 			%div
 				%div{class: 'dropdown_white_box'}
@@ -225,6 +234,7 @@
 				&theta;
 			%div
 				%h2 Designed for recruiting technical talent, by a Technical Recruiter
+			%div{class: "triangle_down"}
 		%div{id:'java_step_drop_down_7'}
 			%div
 				%div{class: 'dropdown_white_box'}
@@ -241,6 +251,7 @@
 				&lambda;
 			%div
 				%h2 Everything is easy-to-understand, Learn only what’s necessary
+			%div{class: "triangle_down"}	
 		%div{id: 'java_step_drop_down_8'}
 			%div
 				%div{class: 'dropdown_white_box'}
@@ -257,6 +268,7 @@
 				&mu;
 			%div
 				%h2 Combination of software knowledge and recruiting expertise
+			%div{class: "triangle_down"}
 		%div{id: 'java_step_drop_down_9'}
 			%div
 				%div{class: 'dropdown_white_box'}
@@ -335,7 +347,7 @@
 						Showing
 				%br/
 				%p{class: "btn", id:"quote_learn_more"}
-					= link_to "Sign Up", url_for(:controller => :pages, :action => :agency), :class => 'text_button', :id => 'quote_learn_more'
+					= link_to "Learn More", url_for(:controller => :pages, :action => :agency), :class => 'text_button', :id => 'quote_learn_more'
 	%div{class: "span4"}
 		%div{class: "house_white_box"}
 			%div{class:"house_seal"}
@@ -352,7 +364,7 @@
 						Show Overview
 				%br/
 				%p{class: "btn", id:"quote_learn_more"}
-					= link_to "Sign Up", url_for(:controller => :pages, :action => :companyhr), :class => 'text_button', :id => 'quote_learn_more'
+					= link_to "Learn More", url_for(:controller => :pages, :action => :companyhr), :class => 'text_button', :id => 'quote_learn_more'
 	%div{class: "span4"}
 		%div{class: "house_white_box"}
 			%div{class:"house_seal"}
@@ -368,7 +380,7 @@
 					%a{id:"java_davinci_button"}
 						Show Overview
 				%br/
-				%p{class: "btn", id:"quote_learn_more"}
+				%p{class: "btn text_button", id:"quote_learn_more"}
 					Call Us
 					
 %div{class:"row", id:"java_renaissance_description"}

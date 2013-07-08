@@ -134,7 +134,7 @@ $(document).ready(function(){
 		$('#akvelon').show();
 		$('#akveloncolor').hide();
 	});
-	$("#java_step_1_div").hover(
+	$("#java_step_1_trigger").hover(
 	    function() {
 	        $("#java_step_drop_down_1").slideToggle("normal");
 					$("#java_step_1_div").slideToggle("normal");
@@ -150,7 +150,7 @@ $(document).ready(function(){
 					$("#java_step_1_curtain").css("background-color","white");
 	    }
 	);
-	$("#java_step_2_div").hover(
+	$("#java_step_2_trigger").hover(
 	    function() {
 	        $("#java_step_drop_down_2").slideToggle("normal");
 					$("#java_step_2_div").slideToggle("normal");
@@ -166,7 +166,7 @@ $(document).ready(function(){
 					$("#java_step_2_curtain").css("background-color","white");
 	    }
 	);
-	$("#java_step_3_div").hover(
+	$("#java_step_3_trigger").hover(
 	    function() {
 	        $("#java_step_drop_down_3").slideToggle("normal");
 					$("#java_step_3_div").slideToggle("normal");
@@ -182,7 +182,7 @@ $(document).ready(function(){
 					$("#java_step_3_curtain").css("background-color","white");
 	    }
 	);
-	$("#java_step_4_div").hover(
+	$("#java_step_4_trigger").hover(
 	    function() {
 	        $("#java_step_drop_down_4").slideToggle("normal");
 					$("#java_step_4_div").slideToggle("normal");
@@ -198,7 +198,7 @@ $(document).ready(function(){
 					$("#java_step_4_curtain").css("background-color","white");
 	    }
 	);
-	$("#java_step_5_div").hover(
+	$("#java_step_5_trigger").hover(
 	    function() {
 	        $("#java_step_drop_down_5").slideToggle("normal");
 					$("#java_step_5_div").slideToggle("normal");
@@ -214,7 +214,7 @@ $(document).ready(function(){
 					$("#java_step_5_curtain").css("background-color","white");
 	    }
 	);
-	$("#java_step_6_div").hover(
+	$("#java_step_6_trigger").hover(
 	    function() {
 	        $("#java_step_drop_down_6").slideToggle("normal");
 					$("#java_step_6_div").slideToggle("normal");
@@ -230,7 +230,7 @@ $(document).ready(function(){
 					$("#java_step_6_curtain").css("background-color","white");
 	    }
 	);
-	$("#java_step_7_div").hover(
+	$("#java_step_7_trigger").hover(
 	    function() {
 	        $("#java_step_drop_down_7").slideToggle("normal");
 					$("#java_step_7_div").slideToggle("normal");
@@ -246,7 +246,7 @@ $(document).ready(function(){
 					$("#java_step_7_curtain").css("background-color","white");
 	    }
 	);
-	$("#java_step_8_div").hover(
+	$("#java_step_8_trigger").hover(
 	    function() {
 	        $("#java_step_drop_down_8").slideToggle("normal");
 					$("#java_step_8_div").slideToggle("normal");
@@ -262,7 +262,7 @@ $(document).ready(function(){
 					$("#java_step_8_curtain").css("background-color","white");
 	    }
 	);
-	$("#java_step_9_div").hover(
+	$("#java_step_9_trigger").hover(
 	    function() {
 	        $("#java_step_drop_down_9").slideToggle("normal");
 					$("#java_step_9_div").slideToggle("normal");

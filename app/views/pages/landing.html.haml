@@ -21,15 +21,46 @@
 %div{class:'vit_stripe'}
 	%div{class: "container"}
 		%div{class: 'row'}
-			%div{class: 'span1'}
-			%div{class: 'span9', id: "transparent_grab"}
+			%div{class:'span1'}
+			%div{class: 'span10'}
+				<div id="myCarousel" class="carousel slide">
+				<!-- Carousel items -->
+				<div class="carousel-inner">
+				<div class="active item">
+				<div id="transparent_grab">
 				%h1 Understanding Geeks Made Simple
 				%h2 Geekology: The Easy Way To Learn The Geek Launguage
 				%p{class: "btn btn-large"}
 					= link_to "For Agency Recruiters", url_for(:controller => :pages, :action => :agency), :class => 'text_button', :id => 'learn_more'
 				%p{class: "btn btn-large"}
 					= link_to "For HR/Recruiting Professionals", url_for(:controller => :pages, :action => :companyhr), :class => 'text_button', :id => 'learn_more'
-			%div{class: 'span2'}
+				</div>
+				</div>
+				<div class="item">
+				<div id="transparent_grab">
+				%h1 Understanding Geeks Made Simple
+				%h2 Geekology: The Easy Way To Learn The Geek Launguage
+				%p{class: "btn btn-large"}
+					= link_to "For Agency Recruiters", url_for(:controller => :pages, :action => :agency), :class => 'text_button', :id => 'learn_more'
+				%p{class: "btn btn-large"}
+					= link_to "For HR/Recruiting Professionals", url_for(:controller => :pages, :action => :companyhr), :class => 'text_button', :id => 'learn_more'
+				</div>
+				</div>
+				<div class="item">
+				<div id="transparent_grab">
+				%h1 Understanding Geeks Made Simple
+				%h2 Geekology: The Easy Way To Learn The Geek Launguage
+				%p{class: "btn btn-large"}
+					= link_to "For Agency Recruiters", url_for(:controller => :pages, :action => :agency), :class => 'text_button', :id => 'learn_more'
+				%p{class: "btn btn-large"}
+					= link_to "For HR/Recruiting Professionals", url_for(:controller => :pages, :action => :companyhr), :class => 'text_button', :id => 'learn_more'
+				</div>
+				</div>
+				</div>
+				<!-- Carousel nav -->
+				</div>
+				<a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+				<a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
 
 %section{class:'red_stripe'}				
 	%div{class:'container'}
@@ -97,7 +128,6 @@
 						%h2 ***
 						%h2 Gain Recognition For Your Acquisition Talent
 						%br
-						
 %div{class:'red_stripe'}
 	%div{class: "container"}
 		%div{class: 'row'}
@@ -121,17 +151,59 @@
 				%div{class:'span8 white_heading', id:'people_say'}
 					%h2 Trusted By Todays Top Tech Startups
 				%div{class: 'span8'}
+					<div id="quoteCarousel1" class="carousel slide">
+					<!-- Carousel items -->
+					<div class="carousel-inner">
+					<div class="active item">
 					%div{id:"quote-box"}
 						%div{class: "white_box_words"}
 							<span>&ldquo;</span>I was surprised how much better I understand technology [after this class]&rdquo; 
 							%br
 							\- <em>Melissa Dela Cruz, DoubleDown Interactive</em> 
-				%div{class: 'span8'}
-					%div{id:"quote-box_2"}
+					</div>
+					<div class="item">
+					%div{id:"quote-box"}
 						%div{class: "white_box_words"}
-							<span>&ldquo;</span>10 out of 10. [This class] made me feel more confident about recruiting and talking to my engineering team.&rdquo; 
+							<span>&ldquo;</span>I was surprised how much better I understand technology [after this class]&rdquo; 
 							%br
-							\- <em>Laura Bott, NetMotion Wireless</em> 
+							\- <em>Melissa Dela Cruz, DoubleDown Interactive</em> 
+					</div>
+					<div class="item">
+					%div{id:"quote-box"}
+						%div{class: "white_box_words"}
+							<span>&ldquo;</span>I was surprised how much better I understand technology [after this class]&rdquo; 
+							%br
+							\- <em>Melissa Dela Cruz, DoubleDown Interactive</em> 
+					</div>
+					</div>
+				</div>
+				%div{class: 'span8'}
+					<div id="quoteCarousel2" class="carousel slide">
+					<!-- Carousel items -->
+					<div class="carousel-inner">
+					<div class="active item">
+					%div{id:"quote-box"}
+						%div{class: "white_box_words"}
+							<span>&ldquo;</span>I was surprised how much better I understand technology [after this class]&rdquo; 
+							%br
+							\- <em>Melissa Dela Cruz, DoubleDown Interactive</em> 
+					</div>
+					<div class="item">
+					%div{id:"quote-box"}
+						%div{class: "white_box_words"}
+							<span>&ldquo;</span>I was surprised how much better I understand technology [after this class]&rdquo; 
+							%br
+							\- <em>Melissa Dela Cruz, DoubleDown Interactive</em> 
+					</div>
+					<div class="item">
+					%div{id:"quote-box"}
+						%div{class: "white_box_words"}
+							<span>&ldquo;</span>I was surprised how much better I understand technology [after this class]&rdquo; 
+							%br
+							\- <em>Melissa Dela Cruz, DoubleDown Interactive</em> 
+					</div>
+					</div>
+					</div>
 			%div{class: "span4"}
 				=image_tag('woman5.png', id: 'woman')
 				
@@ -423,6 +495,9 @@
 		%div{class: "span8"}
 			%h1
 				What Makes <span>Geekology</span> Different:
+			%div{class:'black_line'}
+			%h2
+				We are the Only Program That Teaches You the Technology Behind Technical Recruiting
 	%div{class: "row"}
 		%div{class: "span4", id: "java_step_7_trigger"}
 			%div{class:"step_white_box", id: 'java_step_7_div'}

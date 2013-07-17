@@ -16,6 +16,15 @@
 //= require_tree .
 
 $(document).ready(function(){
+	$('#myCarousel').carousel({
+	  interval: 4000
+	})
+	$('#quoteCarousel1').carousel({
+	  interval: 3000
+	})
+	$('#quoteCarousel2').carousel({
+	  interval: 4000
+	})
 	$('#java_vitruvian_box').on('mouseenter',function(){
 		$('#java_renaissance_description').slideUp();
 		$('#java_davinci_description').slideUp();

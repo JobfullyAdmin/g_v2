@@ -128,7 +128,7 @@
 						%h2 ***
 						%h2 Gain Recognition For Your Acquisition Talent
 						%br
-%div{class:'red_stripe'}
+%div{class:'brown_stripe'}
 	%div{class: "container"}
 		%div{class: 'row'}
 			%div{class: 'span2'}
@@ -606,16 +606,23 @@
 		%div{class: "row new_tan_heading", id: "choose_your_house"}
 			%span{id: "choose_your_house_link"}
 			%div{class: "span2"}
-				%div{id:"three_house"}
-					%div{id:"three_shield"}
-						GK
 			%div{class: "span8"}
 				%h1
 					Choose Your Path:
 			%div{class: "span2"}
 		%div{class: "row"}
 			%div{class: "span4"}
+				%div{class: "house_white_box", id: 'java_vitruvian_box'}
+					=image_tag('uw_library1.jpg')
+					%div{class:"house_seal"}
+						=image_tag('Vitruvian.Gif', id: 'learn_science_pic_2')
+						%h2
+							Company HR/<br>Recriuting
+						%p{class: "btn", id:"quote_learn_more"}
+							= link_to "Learn More", url_for(:controller => :pages, :action => :companyhr), :class => 'text_button', :id => 'quote_learn_more'
+			%div{class: "span4"}
 				%div{class: "house_white_box", id: 'java_renaissance_box'}
+					=image_tag('uw_library1.jpg')
 					%div{class:"house_seal"}
 						=image_tag('VITE-AEREA.png', id: 'learn_science_pic_2')
 						%h2
@@ -623,15 +630,8 @@
 						%p{class: "btn", id:"quote_learn_more"}
 							= link_to "Learn More", url_for(:controller => :pages, :action => :agency), :class => 'text_button', :id => 'quote_learn_more'
 			%div{class: "span4"}
-				%div{class: "house_white_box", id: 'java_vitruvian_box'}
-					%div{class:"house_seal"}
-						=image_tag('Vitruvian.Gif', id: 'learn_science_pic_2')
-						%h2
-							HR/Recriuting Professionals
-						%p{class: "btn", id:"quote_learn_more"}
-							= link_to "Learn More", url_for(:controller => :pages, :action => :companyhr), :class => 'text_button', :id => 'quote_learn_more'
-			%div{class: "span4"}
 				%div{class: "house_white_box", id: 'java_davinci_box'}
+					=image_tag('uw_library1.jpg')
 					%div{class:"house_seal"}
 						=image_tag('joconde.png', id: 'learn_science_pic_2')
 						%h2

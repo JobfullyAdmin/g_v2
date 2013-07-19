@@ -20,10 +20,10 @@ $(document).ready(function(){
 	  interval: 4000
 	})
 	$('#quoteCarousel1').carousel({
-	  interval: 3000
+	  interval: 4000
 	})
 	$('#quoteCarousel2').carousel({
-	  interval: 4000
+	  interval: 6000
 	})
 	$('#java_vitruvian_box').on('mouseenter',function(){
 		$('#java_renaissance_description').slideUp();

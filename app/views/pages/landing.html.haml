@@ -1,23 +1,3 @@
--#%div{class: "container"}
-	%div{class: "row",id: "landing_page_above_fold_heading"}
-		%div{class: "span12"}
-			%header
-				%hgroup
-					%div
-						%h2 Knowing People is an Art, Knowing Tech is a Science
-					%div
-						%h1 <span>Geekology</span> Is Both
-					%div
-						%h2 Easy To Understand Training For Technical Recruiting:
-		%div{class: "row"}
-			%div{class: "span1"}
-			%div{class: "span5"}
-				%p{class: "btn btn-large"}
-					= link_to "Technical Training Itensive: 3 Hour Bootcamp", url_for(:controller => :pages, :action => :agency), :class => 'text_button', :id => 'learn_more'
-			%div{class: "span5"}
-				%p{class: "btn btn-large"}
-					= link_to "Technical Recruiting 101: 3 Half-Day Classes", url_for(:controller => :pages, :action => :companyhr), :class => 'text_button', :id => 'learn_more'
-
 %div{class:'vit_stripe'}
 	%div{class: "container"}
 		%div{class: 'row'}
@@ -31,9 +11,9 @@
 				%h1 Understanding Geeks Made Simple
 				%h2 Geekology: The Easy Way To Learn The Geek Launguage
 				%p{class: "btn btn-large"}
-					= link_to "For Agency Recruiters", url_for(:controller => :pages, :action => :agency), :class => 'text_button', :id => 'learn_more'
+					= link_to "Learn More", url_for('/#learn_more_link'), :class => 'text_button', :id => 'learn_more'
 				%p{class: "btn btn-large"}
-					= link_to "For HR/Recruiting Professionals", url_for(:controller => :pages, :action => :companyhr), :class => 'text_button', :id => 'learn_more'
+					= link_to "Sign Up", url_for('/#choose_your_house_link'), :class => 'text_button', :id => 'learn_more'
 				</div>
 				</div>
 				<div class="item">
@@ -41,9 +21,9 @@
 				%h1 - Knowing Tech Is A Science -<br>- Knowing People Is An Art - 
 				%h2 Geekology Lets You Bring Them Together
 				%p{class: "btn btn-large"}
-					= link_to "For Agency Recruiters", url_for(:controller => :pages, :action => :agency), :class => 'text_button', :id => 'learn_more'
+					= link_to "Learn More", url_for('/#learn_more_link'), :class => 'text_button', :id => 'learn_more'
 				%p{class: "btn btn-large"}
-					= link_to "For HR/Recruiting Professionals", url_for(:controller => :pages, :action => :companyhr), :class => 'text_button', :id => 'learn_more'
+					= link_to "Sign Up", url_for('/#choose_your_house_link'), :class => 'text_button', :id => 'learn_more'
 				</div>
 				</div>
 				<div class="item">
@@ -55,9 +35,9 @@
 				%br
 				%div{id:'equalizer1'}
 				%p{class: "btn btn-large"}
-					= link_to "For Agency Recruiters", url_for(:controller => :pages, :action => :agency), :class => 'text_button', :id => 'learn_more'
+					= link_to "Learn More", url_for('/#learn_more_link'), :class => 'text_button', :id => 'learn_more'
 				%p{class: "btn btn-large"}
-					= link_to "For HR/Recruiting Professionals", url_for(:controller => :pages, :action => :companyhr), :class => 'text_button', :id => 'learn_more'
+					= link_to "Sign Up", url_for('/#choose_your_house_link'), :class => 'text_button', :id => 'learn_more'
 				</div>
 				</div>
 				</div>
@@ -76,7 +56,8 @@
 					Learn About Technology, Engineering Teams, and Technical Talent In Plain English
 					
 %div{class: 'container'}
-	%div{class: "row"}
+	%div{class: "row", id:'learn_more'}
+		%span{id:'learn_more_link'}
 		%div{class: 'spacer'}
 		%div{class: "span4", id: 'java_step_1_trigger'}
 			%div{class:"step_white_box", id: 'java_step_1_div'}
@@ -291,7 +272,7 @@
 	%div{class:'row', id:'java_compare_box_2'}
 		%div{class: 'span5'}
 			%h1{class: 'basic_black_heading'}
-				Google / Wikipedia
+				Google or<br>Wikipedia
 			%div{class: 'compare_chart_basic_white_box'}
 				%h2 - Explanations in Technical Terms - Hard to Understand
 				%h2 - Confusing and Frustrating Instead of Helpful or Practical
@@ -384,6 +365,7 @@
 						&ldquo; &rdquo;
 					%div{class: "white_box_words"}
 						&ldquo;I was surprised how much better I understand technology [after this class]&rdquo; 
+						%br
 						%br
 						\- <em>Melissa Dela Cruz, DoubleDown Interactive</em> 
 			%div{class: "span4"}
@@ -576,7 +558,7 @@
 				%div{class: "step_small_logo"}
 					GK
 				%div
-					%h1 We Know What<br>is and isn't<br>Needed For Tech Recruiting
+					%h1 We Know What is and isn't<br>Needed For Tech Recruiting
 				%div{class:'triangle_border'}
 					%div{class: "triangle_down"}
 			%div{class: 'fake_curtain', id: 'java_step_9_curtain'}	
@@ -620,7 +602,7 @@
 			%div{class: "span2"}
 			%div{class: "span8"}
 				%h1
-					Choose Your Path:
+					Choose Your Program:
 			%div{class: "span2"}
 		%div{class: "row"}
 			%div{class: "span4"}
@@ -631,7 +613,7 @@
 						%h2
 							Company HR/<br>Recriuting
 						%p{class: "btn", id:"quote_learn_more"}
-							= link_to "Learn More", url_for(:controller => :pages, :action => :companyhr), :class => 'text_button', :id => 'quote_learn_more'
+							= link_to "Sign Up", url_for(:controller => :pages, :action => :companyhr), :class => 'text_button', :id => 'quote_learn_more'
 			%div{class: "span4"}
 				%div{class: "house_white_box", id: 'java_renaissance_box'}
 					=image_tag('building2.jpg')
@@ -640,7 +622,7 @@
 						%h2
 							Agency<br>Recriuters
 						%p{class: "btn", id:"quote_learn_more"}
-							= link_to "Learn More", url_for(:controller => :pages, :action => :agency), :class => 'text_button', :id => 'quote_learn_more'
+							= link_to "Sign Up", url_for(:controller => :pages, :action => :agency), :class => 'text_button', :id => 'quote_learn_more'
 			%div{class: "span4"}
 				%div{class: "house_white_box", id: 'java_davinci_box'}
 					=image_tag('building3.jpg')

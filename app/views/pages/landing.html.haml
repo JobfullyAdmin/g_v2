@@ -128,28 +128,29 @@
 						%h2 ***
 						%h2 Gain Recognition For Your Acquisition Talent
 						%br
+						
 %div{class:'brown_stripe'}
 	%div{class: "container"}
 		%div{class: 'row'}
+			%div{class:'span12 white_heading', id:'people_say'}
+				%h2 Trusted By Todays Top Tech Companies
+		%div{class: 'row'}
+			%div{class: 'span2'}
+				=image_tag('microsofttrans.png')
+			%div{class: 'span2'}
+				=image_tag('doubledowntrans.png')
+			%div{class: 'span2'}
+				=image_tag('wetpainttrans.png')
 			%div{class: 'span2'}
 				=image_tag('inrixtrans.png')
 			%div{class: 'span2'}
 				=image_tag('akvelontrans.png')
 			%div{class: 'span2'}
-				=image_tag('doubledowntrans.png')
-			%div{class: 'span2'}
 				=image_tag('netmotiontrans.png')
-			%div{class: 'span2'}
-				=image_tag('wetpainttrans.png')
-			%div{class: 'span2'}
-				=image_tag('pdstrans.png')
-						
-%div{class:'brown_stripe'}
-	%div{class: "container"}
-		%div{class: 'row'}
-			%div{class: 'span9'}
-				%div{class:'span12 white_heading', id:'people_say'}
-					%h2 Trusted By Todays Top Tech Startups
+			
+			%div{class:'spacer'}	
+		%div{class:'row'}
+			%div{class:'span9'}
 				%div{class: 'span9'}
 					<div id="quoteCarousel1" class="carousel slide">
 					<!-- Carousel items -->
@@ -613,7 +614,7 @@
 		%div{class: "row"}
 			%div{class: "span4"}
 				%div{class: "house_white_box", id: 'java_vitruvian_box'}
-					=image_tag('uw_library1.jpg')
+					=image_tag('building1.jpg')
 					%div{class:"house_seal"}
 						=image_tag('Vitruvian.Gif', id: 'learn_science_pic_2')
 						%h2
@@ -622,7 +623,7 @@
 							= link_to "Learn More", url_for(:controller => :pages, :action => :companyhr), :class => 'text_button', :id => 'quote_learn_more'
 			%div{class: "span4"}
 				%div{class: "house_white_box", id: 'java_renaissance_box'}
-					=image_tag('uw_library1.jpg')
+					=image_tag('building2.jpg')
 					%div{class:"house_seal"}
 						=image_tag('VITE-AEREA.png', id: 'learn_science_pic_2')
 						%h2
@@ -631,7 +632,7 @@
 							= link_to "Learn More", url_for(:controller => :pages, :action => :agency), :class => 'text_button', :id => 'quote_learn_more'
 			%div{class: "span4"}
 				%div{class: "house_white_box", id: 'java_davinci_box'}
-					=image_tag('uw_library1.jpg')
+					=image_tag('building3.jpg')
 					%div{class:"house_seal"}
 						=image_tag('joconde.png', id: 'learn_science_pic_2')
 						%h2
